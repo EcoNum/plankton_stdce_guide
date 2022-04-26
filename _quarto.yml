@@ -1,0 +1,35 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Guide de classification du plancton"
+  subtitle: "Plancton de la baie de Calvi (France)"
+  author:
+    - name: "Engels Guyliann"
+    - name: "Grosjean Philippe"
+  date: "04/20/2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - "01plankton_crustacea.qmd"
+    - "02plankton_dark.qmd"
+    - "03plankton_gelatinous.qmd"
+    - "04plankton_small.qmd"
+    - "05alter.qmd"
+    - references.qmd
+
+bibliography: references.bib
+
+before_chapter_script: 'R/init.R'
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+lang: fr
+
+editor: visual
+

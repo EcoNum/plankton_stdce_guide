@@ -1,0 +1,25 @@
+# Introduction
+
+```{r, message=FALSE, warning=FALSE}
+plkt <- data.io::read(here::here("data", "mesoplankton.csv"))
+```
+
+La classification se décompose en 6 niveaux :
+
+-   N1 : séparation rapide et pratique en `r length(unique(plkt$N1))` groupes. On retrouve les groupes suivants : `r unique(plkt$N1)` .
+
+-   N2 : Séparation principalement sur base des phylums en `r length(unique(plkt$N2))` groupes
+
+-   N3 : Séparation principalement sur base des Classes en `r length(unique(plkt$N3))` groupes
+
+-   N4 : Séparation sur base des Ordres (si possible) en `r length(unique(plkt$N4))` groupes
+
+-   N5 : Séparation sur base des Sous-ordres et des Genres en `r length(unique(plkt$N5))` groupes
+
+-   N6 : Séparation sur base des espèces en `r length(unique(plkt$N6))` groupes
+
+L'arborescence des différents groupes sont visualisable ci-dessous. Une vue sous la forme d'un mindmap est également disponible [ici](https://coggle.it/diagram/XniwI-MesP8BdYNn/t/mesoplankton/46c9eaed5e2a5c6a3292935cfdb71acaf585976bef9c390b482e2f473c587862?present=1).
+
+```{r}
+fs::dir_tree("training_set/", type = "directory")
+```

@@ -1,0 +1,5 @@
+# Préface {.unnumbered}
+
+Cet ouvrage a pour vocation d'être un guide d'identification. Des informations scientifiques sont néanmoins ajoutée basé sur les recherches de Quivy et Dugauquier (ajouter citation memoire...)
+
+Ce livre est un Quarto book. Afin d'en apprendre d'avantages sur ce format, consultez : <https://quarto.org/docs/books>.

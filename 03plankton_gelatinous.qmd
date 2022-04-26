@@ -1,0 +1,60 @@
+# Plankton_gelatinous
+
+```{r, warning=FALSE}
+source("R/init.R")
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_gelatinous"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+## Tunicata
+
+## Chaetognatha
+
+## Ctenophora
+
+## Cnidaria
+
+### Scyphozoa
+
+Les schyphozoaires sont communément appelé méduses. Ces organismes sont à la fois benthiques et pélagiques [@licandro2017]. Les stades successifs du développement des méduse est présenté ci-dessous.
+
+![Cycle de vie de Catostylus mosaicus (Scyphozoa: Rhizostomeae) [@pitt2000].](images/03plankton_gelatinous/scyphozoa_life_cycle.png){fig-align="center" width="348"}
+
+#### Scyphozoa_ephyra
+
+Le stade ephyra est aisément reconnaissable de par sa symétrie de 8. Il est possible d'affiner cette classification en s'intéressant à la distinction entre les Semaeostomeae et les Rizostomeae se base principalement sur la morphologie des canaux radiaux et adriaticaux.
+
+```{r}
+plot_vignettes(vigns, group = "Scyphozoa_ephyra")
+
+```
+
+#### Scyphozoa_medusa
+
+TODO
+
+### Hydrozoa
+
+#### Siphonophorae
+
+Les siphonophores sont en une colonie d'individus que l'on nomme zoïdes. On discrimine différent zoïdes par rapport à leur fonctions nectophore (locomotion), gastrozoïde ( digestion), pneumatophore (flottaison) [@licandro2017a].
+
+##### Abilidae
+
+##### Diphydae
+
+##### Physonectae
+
+Physonectae_nectophore
+
+Ces organismes sont constitués d'un pneumatophore contrairement aux Calycophore. La forme particulière de ces organismes la rend aisément identifiables.
+
+![A: Photographie \[\@pugh2016\] et B: vignette de Physonectae.](images/03plankton_gelatinous/physonectae.png){fig-align="center" width="443"}
+
+Ce groupe s'apparente au groupe des `nectophore_Physonectae` présent dans le ZooScanNet.
+
+```{r}
+plot_vignettes(vigns, group = "Physonectae_nectophore")
+
+```

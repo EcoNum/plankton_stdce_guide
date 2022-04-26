@@ -1,0 +1,3 @@
+# INFORMATION SUR LE TRAINING SET
+
+Le training set nommé `_train_set_classif8` a la même structure que le training set complet disponible <...> (TODO en cours d'élaboration). Le training set présenté ici ne comprend que quelques images par groupe afin de les imager.
