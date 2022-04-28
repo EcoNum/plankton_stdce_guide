@@ -3,12 +3,18 @@ project:
   output-dir: docs
 
 book:
-  title: "Guide de classification du plancton"
-  subtitle: "Plancton de la baie de Calvi (France)"
+  title: "Guide de classification du mesozooplancton en Mer Ligurienne"
+
   author:
-    - name: "Engels Guyliann"
-    - name: "Grosjean Philippe"
-  date: "04/20/2022"
+    - name: "Guyliann Engels"
+      url: "https://github.com/GuyliannEngels"
+      affiliation: "Service d'écologie numérique, Université de Mons, Belgique"
+      affiliation-url: "https://github.com/EcoNum"
+    - name: "Philippe Grosjean"
+      url: "https://github.com/phgrosjean"
+      affiliation: "Service d'écologie numérique, Université de Mons, Belgique"
+      affiliation-url: "https://github.com/EcoNum"
+  date: now
   chapters:
     - index.qmd
     - intro.qmd

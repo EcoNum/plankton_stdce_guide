@@ -1,6 +1,6 @@
 # Plankton_gelatinous
 
-```{r, warning=FALSE}
+```{r setup, warning=FALSE}
 source("R/init.R")
 vigns <- fs::dir_ls(
   here::here(training_dir, "Plankton_gelatinous"), 
@@ -17,44 +17,119 @@ vigns <- fs::dir_ls(
 
 ### Scyphozoa
 
-Les schyphozoaires sont communément appelé méduses. Ces organismes sont à la fois benthiques et pélagiques [@licandro2017]. Les stades successifs du développement des méduse est présenté ci-dessous.
+Les schyphozoaires sont communément appelé méduses. Ces organismes sont à la fois benthiques et pélagiques [@licandro2017]. Les stades successifs du développement des médusse sont présentés ci-dessous.
 
 ![Cycle de vie de Catostylus mosaicus (Scyphozoa: Rhizostomeae) [@pitt2000].](images/03plankton_gelatinous/scyphozoa_life_cycle.png){fig-align="center" width="348"}
 
 #### Scyphozoa_ephyra
 
-Le stade ephyra est aisément reconnaissable de par sa symétrie de 8. Il est possible d'affiner cette classification en s'intéressant à la distinction entre les Semaeostomeae et les Rizostomeae se base principalement sur la morphologie des canaux radiaux et adriaticaux.
+Le stade ephyra est aisément reconnaissable de par sa symétrie de 8 ( @fig-vig-ephyra ). Les canaux radiaux et adriaticaux sont plus foncés sur les vignettes. La morphologie des canaux radiaux et adriaticaux peut être employée afin d'affiner la classification. Nous n'irons cependant pas plus loin dans cet ouvrage.
 
 ```{r}
+#| label: "fig-vig-ephyra"
+#| fig-cap: "Vignettes du stade ephyra des Scyphozoa"
 plot_vignettes(vigns, group = "Scyphozoa_ephyra")
 
 ```
 
+Ce groupe est similaire au groupe ephyra dans le ZooScanNet (@fig-zsc-ephyra).
+
+::: {#fig-zsc-ephyra layout-ncol="2"}
+![](images/zooscannet/ephyra/34834644.jpg){width="162"}
+
+![](images/zooscannet/ephyra/34826029.jpg){width="158"}
+
+Image du stade ephyra du ZooScanNet [@elineau2018]
+:::
+
 #### Scyphozoa_medusa
 
-TODO
+Au stade méduse, la symétrie de 8 est moins marqué. Les différents canaux sont toujours plus On observe. Les organismes sont généralement plus grand que ceux du stade ephyra ( @fig-scyph-medusa ).
+
+![Vignette du stade meduse des scyphozoa](training_set/_train/_train_classif8/Plankton_gelatinous/Cnidaria/Scyphozoa/Scyphozoa_medusa/STDCE.2010-06-22.H1+B1_199.png){#fig-scyph-medusa width="285"}
+
+La @fig-scyph-medusa présente plusieurs vignettes du stade méduse.
+
+```{r}
+#| label: "fig-vig-medusa"
+#| fig-cap: "Vignettes du stade méduse des Scyphozoa"
+plot_vignettes(vigns, group = "Scyphozoa_medusa", nx =2, ny = 2)
+```
+
+Ce groupe est similaire au groupe `scyphozoa` dans le ZooScanNet ( @fig-zsn-scy-medu ).
+
+::: {#fig-zsn-scy-medu layout-ncol="2"}
+![](images/zooscannet/scyphozoa/14927820.jpg){width="250"}
+
+![](images/zooscannet/scyphozoa/44736314.jpg){width="250"}
+
+![](images/zooscannet/scyphozoa/46946077.jpg){width="250"}
+
+![](images/zooscannet/scyphozoa/46976909.jpg){width="250"}
+
+Image du stade meduse du ZooScanNet [@elineau2018]
+:::
 
 ### Hydrozoa
 
 #### Siphonophorae
 
-Les siphonophores sont en une colonie d'individus que l'on nomme zoïdes. On discrimine différent zoïdes par rapport à leur fonctions nectophore (locomotion), gastrozoïde ( digestion), pneumatophore (flottaison) [@licandro2017a].
+Les siphonophores sont une colonie d'individus que l'on nomme zoïdes. On discrimine différent zoïdes par rapport à leur fonctions nectophore (locomotion), gastrozoïde ( digestion), pneumatophore (flottaison) [@licandro2017a].
 
 ##### Abilidae
+
+Le nectophore des Abilidae est de forme prismatique
 
 ##### Diphydae
 
 ##### Physonectae
 
-Physonectae_nectophore
+###### Physonectae_nectophore
 
-Ces organismes sont constitués d'un pneumatophore contrairement aux Calycophore. La forme particulière de ces organismes la rend aisément identifiables.
+Ces organismes sont constitués d'un pneumatophore contrairement aux Calycophore. La forme particulière de ces organismes les rendent aisément identifiables.
 
 ![A: Photographie \[\@pugh2016\] et B: vignette de Physonectae.](images/03plankton_gelatinous/physonectae.png){fig-align="center" width="443"}
 
-Ce groupe s'apparente au groupe des `nectophore_Physonectae` présent dans le ZooScanNet.
+La @fig-vig-phy-nectophore présente plusieurs vignettes du stade méduse.
 
 ```{r}
+#| label: "fig-vig-phy-nectophore"
+#| fig-cap: "Vignettes de nectophore de Physonectae."
 plot_vignettes(vigns, group = "Physonectae_nectophore")
 
 ```
+
+Ce groupe est similaire au groupe `nectophore_Physonectae` dans le ZooScanNet ( @fig-zsn-physonectae ).
+
+::: {#fig-zsn-physonectae layout-ncol="2"}
+![](images/zooscannet/nectophore__Physonectae/12748088.jpg){width="250"}
+
+![](images/zooscannet/nectophore__Physonectae/12748921.jpg){width="250"}
+
+Image de physonectae du ZooScanNet [@elineau2018]
+:::
+
+#### Trachymedusea
+
+##### Rhopalonematidae
+
+###### Aglaura
+
+La @fig-zsn-aglaura présente plusieurs vignettes de Rhopalonematidae.
+
+```{r}
+#| label: "fig-vig-aglaura"
+#| fig-cap: "Vignettes d'Aglaura."
+plot_vignettes(vigns, group = "Aglaura")
+
+```
+
+Ce groupe est similaire au groupe `Aglaura` dans le ZooScanNet ( @fig-zsn-aglaura ).
+
+::: {#fig-zsn-aglaura layout-ncol="2"}
+![](images/zooscannet/aglaura/14449575.jpg){width="250"}
+
+![](images/zooscannet/aglaura/14927410.jpg){width="250"}
+
+Image d'Aglaura du ZooScanNet [@elineau2018]
+:::

@@ -6,7 +6,7 @@ fs::dir_exists(training_dir)
 
 
 # Functions -----
-plot_vignettes <- function(paths, group = NULL, nx = 3, ny = 3, main = NULL, ...) {
+plot_vignettes <- function(paths, group = NULL, nx = 3, ny = 3, main = NULL, seed = 43, ...) {
 
   if(!is.null(group)) {
     #paths <- grep(pattern = group,x = paths, value = TRUE)
@@ -18,6 +18,7 @@ plot_vignettes <- function(paths, group = NULL, nx = 3, ny = 3, main = NULL, ...
     stop("The number of images is too low")
   }
 
+  set.seed(seed)
   vigs <- sample(paths, size = (nx*ny), replace = FALSE)
 
   zooimage::zidbPlotNew(main = main)
