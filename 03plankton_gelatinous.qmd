@@ -72,6 +72,32 @@ Image du stade meduse du ZooScanNet [@elineau2018]
 
 ### Hydrozoa
 
+#### Leptothecata
+
+##### Campanulariidae
+
+###### Obelia
+
+Au centre on retrouve la bouche de l'organisme relie par les cannaux radiaires aux gonades.
+
+![Image de Leptomeduse *Obelia* sp [@hecq2009]](images/03plankton_gelatinous/obelia.png){width="301"}
+
+Ce groupe n'a pas été étudié dans les précédents set d'apprentissage.
+
+Ce groupe est similaire au groupe `obelia` dans le ZooScanNet ( @fig-zsn-obelia ).
+
+::: {#fig-zsn-obelia layout-ncol="2"}
+![](images/zooscannet/obelia/48003966.jpg){width="200"}
+
+![](images/zooscannet/obelia/48001606.jpg){width="200"}
+
+![](images/zooscannet/obelia/44711704.jpg){width="200"}
+
+![](images/zooscannet/obelia/48002929.jpg){width="200"}
+
+Image d'*Obelia* du ZooScanNet [@elineau2018].
+:::
+
 #### Siphonophorae
 
 Les siphonophores sont une colonie d'individus que l'on nomme zoïdes. On discrimine différent zoïdes par rapport à leur fonctions nectophore (locomotion), gastrozoïde ( digestion), pneumatophore (flottaison) [@licandro2017a].
@@ -105,7 +131,7 @@ Ce groupe est similaire au groupe `eudoxie__Abylopsis_tetragona` dans le ZooScan
 
 ![](images/zooscannet/eudoxie__Abylopsis_tetragona/14943708.jpg){width="250"}
 
-Image d'eudoxie d' *Abylopsis tetragona* [@elineau2018].
+Image d'eudoxie d' *Abylopsis tetragona* du ZooScanNet [@elineau2018].
 :::
 
 ###### Abylopsis_tetragona_gonophore
@@ -125,7 +151,7 @@ Ce groupe est similaire au groupe `gonophore__Abylopsis_tetragona` dans le ZooSc
 
 ![](images/zooscannet/gonophore__Abylopsis_tetragona/12749469.jpg)
 
-Image du gonophore d' *Abylopsis tetragona* [@elineau2018].
+Image du gonophore d' *Abylopsis tetragona* du ZooScanNet [@elineau2018].
 :::
 
 ###### Abylopsis_tetragona_nectophore
@@ -157,7 +183,7 @@ Ce groupe est similaire au groupe `nectophore__Abylopsis_tetragona` dans le ZooS
 
 ![](images/zooscannet/nectophore__Abylopsis_tetragona/44784645.jpg){width="250"}
 
-Image de nectophore antérieur d' *Abylopsis tetragona* [@elineau2018].
+Image de nectophore antérieur d' *Abylopsis tetragona* du ZooScanNet [@elineau2018].
 :::
 
 La @fig-zsn-comp-nectophore-aby propose une organisme complet doté de son nectophore antérieur et de son nectophore postérieur
@@ -166,11 +192,40 @@ La @fig-zsn-comp-nectophore-aby propose une organisme complet doté de son necto
 
 ##### Diphydae
 
-###### Diphydae_eudoxie
+###### Diphyidae_eudoxie
 
-###### Diphydae_gonophore
+TODO
 
-###### Diphydae_nectophore
+###### Diphyidae_gonophore
+
+La série de vignettes présente les gonophore qui sont la partie reproductrice du stade eudoxie. On retrouve une certaine ressemblance avec les gonophores d'*Abylopsis tetragona sans le* prisme rectangulaire ( @fig-vig-diphyidae-gonophore ).
+
+```{r}
+#| label: "fig-vig-diphyidae-gonophore"
+#| fig-cap: "Vignettes de gonophore de Diphyidae."
+plot_vignettes(vigns, group = "Diphyidae_gonophore")
+
+```
+
+Ce groupe est similaire au groupe `gonophore__Diphyidae` dans le ZooScanNet ( @fig-zsn-diphyidae-gonophore ).
+
+::: {#fig-zsn-diphyidae-gonophore layout-col="2"}
+![](images/zooscannet/gonophore_diphyidae/995609.jpg){width="250"}
+
+![](images/zooscannet/gonophore_diphyidae/996275.jpg){width="250"}
+
+Image de gonophores de Diphyidae du ZooScanNet [@elineau2018]
+:::
+
+###### Diphyidae_nectophore
+
+Les nectophores des Diphyidae sont de formes coniques. Le nectosac est plus densus sur les vignettes ci-dessous. Le long du nectosac, on observe les somatocystes ( @fig-vig-diphyidae-nectophore ).
+
+```{r}
+#| label: "fig-vig-diphyidae-nectophore"
+#| fig-cap: "Vignettes de nectophores de Diphyidae."
+plot_vignettes(vigns, group = "Diphyidae_nectophore")
+```
 
 ##### Physonectae
 
