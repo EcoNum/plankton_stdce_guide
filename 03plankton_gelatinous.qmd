@@ -78,15 +78,105 @@ Les siphonophores sont une colonie d'individus que l'on nomme zoïdes. On discri
 
 ##### Abilidae
 
-Le nectophore des Abilidae est de forme prismatique
+Les abylidae ne possèdent pas de nectophores tout comme les Diphydae.
+
+###### Abylopsis_tetragona_eudoxie
+
+La @fig-aby-eudoxie présente sur la partie supérieur ce que nous classons dans la catégorie `Abylopsis_tetragona_eudoxie` et la partie inférieur `Abylopsis_tetragona_gonophore` .
+
+![Eudoxie d' \*Abylopsis tetragona\* ( [@hecq2009])](images/03plankton_gelatinous/abylopsis_eudoxie.png){#fig-aby-eudoxie width="250"}
+
+La @fig-vig-aby-eudoxie présente plusieurs vignettes du stade eudoxie d'*Abylopsis tetragona* (partie bractée). La forme pentagonale est très marquée ainsi que les gastrozoides plus denses sur les vignettes.
+
+```{r}
+#| label: "fig-vig-aby-eudoxie"
+#| fig-cap: "Vignettes du stade eudoxie d' *Abylopsis tetragona*."
+plot_vignettes(vigns, group = "Abylopsis_tetragona_eudoxie")
+```
+
+Ce groupe est similaire au groupe `eudoxie__Abylopsis_tetragona` dans le ZooScanNet ( @fig-zsn-eudoxie-abylopsis ). Les deux premières images comprennent uniquement la partie bractée de l'organisme alors que les deux suivantes proposent la partie bractée et le gonophore.
+
+::: {#fig-zsn-eudoxie-abylopsis layout-ncol="2"}
+![](images/zooscannet/eudoxie__Abylopsis_tetragona/14503285.jpg){width="250"}
+
+![](images/zooscannet/eudoxie__Abylopsis_tetragona/15729703.jpg){width="250"}
+
+![](images/zooscannet/eudoxie__Abylopsis_tetragona/14940439.jpg){width="247"}
+
+![](images/zooscannet/eudoxie__Abylopsis_tetragona/14943708.jpg){width="250"}
+
+Image d'eudoxie d' *Abylopsis tetragona* [@elineau2018].
+:::
+
+###### Abylopsis_tetragona_gonophore
+
+La partie inférieur de la @fig-aby-eudoxie présente les gonophores d'une forme de prisme rectangulaire. La @fig-vig-aby-gonophore présente plusieurs vignettes du gonophore d'*abylopsis tetragona.*
+
+```{r}
+#| label: "fig-vig-aby-gonophore"
+#| fig-cap: "Vignettes de gonophore d' *Abylopsis tetragona*."
+plot_vignettes(vigns, group = "Abylopsis_tetragona_gonophore", nx = 3, ny = 2)
+```
+
+Ce groupe est similaire au groupe `gonophore__Abylopsis_tetragona` dans le ZooScanNet ( @fig-zsn-nectophore-aby ).
+
+::: {#fig-zsn-gonophore-abyl layout-ncol="2"}
+![](images/zooscannet/gonophore__Abylopsis_tetragona/15724093.jpg){width="250"}
+
+![](images/zooscannet/gonophore__Abylopsis_tetragona/12749469.jpg)
+
+Image du gonophore d' *Abylopsis tetragona* [@elineau2018].
+:::
+
+###### Abylopsis_tetragona_nectophore
+
+Plusieurs éléments sont identifiables sur le nectophore antérieur des Abylidée (@fig-aby-nectophore) :
+
+-   la forme pentagonales
+
+-   la cavité sous ombrellaire (plus grande des 3 cavités, claire sur les vignettes)
+
+-   gastrozoide (cavité la plus dense sur l'image)
+
+-   somatocyste (cavité ovale avec un petit diverticule)
+
+![Nectophore antérieur d' *Abylidae* [@hecq2009]](images/03plankton_gelatinous/abylopsis_nectophore.png){#fig-aby-nectophore width="262"}
+
+La @fig-vig-aby-nectophore présente plusieurs vignettes du nectophore d'*abylopsis tetragona*.
+
+```{r}
+#| label: "fig-vig-aby-nectophore"
+#| fig-cap: "Vignettes de nectophore d' *Abylopsis tetragona*."
+plot_vignettes(vigns, group = "Abylopsis_tetragona_nectophore")
+```
+
+Ce groupe est similaire au groupe `nectophore__Abylopsis_tetragona` dans le ZooScanNet ( @fig-zsn-nectophore-aby ).
+
+::: {#fig-zsn-nectophore-aby layout-ncol="2"}
+![](images/zooscannet/nectophore__Abylopsis_tetragona/34812358.jpg){width="250"}
+
+![](images/zooscannet/nectophore__Abylopsis_tetragona/44784645.jpg){width="250"}
+
+Image de nectophore antérieur d' *Abylopsis tetragona* [@elineau2018].
+:::
+
+La @fig-zsn-comp-nectophore-aby propose une organisme complet doté de son nectophore antérieur et de son nectophore postérieur
+
+![Image du nectophore antérieur et postérieur d' Abylopsis tetragona du ZooScanNet ([@elineau2018]).](images/zooscannet/nectophore__Abylopsis_tetragona/34916284.jpg){#fig-zsn-comp-nectophore-aby width="478"}
 
 ##### Diphydae
+
+###### Diphydae_eudoxie
+
+###### Diphydae_gonophore
+
+###### Diphydae_nectophore
 
 ##### Physonectae
 
 ###### Physonectae_nectophore
 
-Ces organismes sont constitués d'un pneumatophore contrairement aux Calycophore. La forme particulière de ces organismes les rendent aisément identifiables.
+Ces organismes sont constitués d'un pneumatophore contrairement aux Calycophore. La forme particulière de ces organismes les rendent aisément identifiables. On observe un resserrement à la base de la colonie.
 
 ![A: Photographie \[\@pugh2016\] et B: vignette de Physonectae.](images/03plankton_gelatinous/physonectae.png){fig-align="center" width="443"}
 
@@ -115,7 +205,7 @@ Image de physonectae du ZooScanNet [@elineau2018]
 
 ###### Aglaura
 
-La @fig-zsn-aglaura présente plusieurs vignettes de Rhopalonematidae.
+La @fig-zsn-aglaura présente plusieurs vignettes de Rhopalonematidae. La forme assez particulière de ce genre permet de l'identifier assez aisément. La partie plus dense dans la partie supérieur de l'organisme est son estomac et les ses gonages suspendue par un pédoncule.
 
 ```{r}
 #| label: "fig-vig-aglaura"
