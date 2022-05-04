@@ -101,13 +101,67 @@ Images de Doliolida du ZooScanNet [@elineau2018]
 
 ### Appendicularia
 
+Les Appendicularia conserve leur queue à l'état adulte. Ce caractère néoténique les rend facilement discernable. Ces organismes sont divisée en deux parties : la tête et le tronc ( @fig-appendicularia ).
+
+![Vignette d'Appendicularia: A tête, B tronc [@quivythomas2018].](images/03plankton_gelatinous/appendicularia_comp.png){#fig-appendicularia}
+
 #### Copelata
 
 ##### Oikopleuridae
 
+Au niveau de la tête les glandes, les organes (intestin, oeisophage, glandes,...)sont de grandes tailles et donne une coloration très foncée à la tête de l'organisme. Les cellules subchrodal qui entoure la notochorde donne une impression plus dense de la queue. (@fig-oikopleuridae)
+
+![Vignette (A) et image (B) d'Oikopleuridae [@hecq2014]](images/03plankton_gelatinous/oikopleuridae.png){#fig-oikopleuridae width="250"}
+
+La @fig-vig-oikopleuridae présente plusieurs vignettes d'Oikopleuridae.
+
+```{r}
+#| label: "fig-vig-oikopleuridae"
+#| fig-cap: "Vignettes de Oikopleuridae"
+plot_vignettes(vigns, group = "Oikopleuridae")
+```
+
 ##### Fritillariidae
 
+La tête de ces organismes est moins foncée sur les vignettes (@fig-fritillariidae). On retrouve un forme ressemblant à un marteau ou un pioche. La queue semble moins dense mais assez large.
+
+![Vignette (A) et image de Fritillariidae [@hecq2014]](images/03plankton_gelatinous/frittillariidae.png){#fig-fritillariidae}
+
+La @fig-vig-fritillariidae présente plusieurs vignettes de Fritillariidae.
+
+```{r}
+#| label: "fig-vig-fritillariidae"
+#| fig-cap: "Vignettes de Fritillariidae"
+plot_vignettes(vigns, group = "Fritillariidae")
+```
+
 #### Appendicularia_tail
+
+Lors des traits de filets, l'organisme est souvent endommagé. On retrouve de ce fait dans les échantillons des queues d'appendiculaire (@fig-appendicularia-tail). Les bandes foncées entourant la notochorde est généralement visible [@gorsky2017].
+
+![Vignette d'une queue d'appendicularia : A masse musculaire, B notochorde [@quivythomas2018].](images/03plankton_gelatinous/appendicularia_tails.png){#fig-appendicularia-tail width="250"}
+
+La @fig-vig-appendicularia-tail présente plusieurs vignettes de queue d'Appendiculaira.
+
+```{r}
+#| label: "fig-vig-appendicularia-tail"
+#| fig-cap: "Vignettes de queues d'Appendicularia."
+plot_vignettes(vigns, group = "Appendicularia_tail")
+```
+
+Ce groupe est similaire au groupe `tail__appendicularia` dans le ZooScanNet ( @fig-zsn-appendicularia-tail ).
+
+::: {#fig-zsn-appendicularia-tail layout-ncol="2"}
+![](images/zooscannet/tail__appendicularia/993497.jpg){width="250"}
+
+![](images/zooscannet/tail__appendicularia/34753786.jpg){width="250"}
+
+![](images/zooscannet/tail__appendicularia/14937240.jpg){width="100"}
+
+![](images/zooscannet/tail__appendicularia/34881065.jpg){width="100"}
+
+Images de queues d'Appendicularia du ZooScanNet [@elineau2018].
+:::
 
 ## Chaetognatha
 
@@ -450,7 +504,7 @@ Image de physonectae du ZooScanNet [@elineau2018]
 
 ###### Aglaura
 
-La @fig-zsn-aglaura présente plusieurs vignettes de Rhopalonematidae. La forme assez particulière de ce genre permet de l'identifier assez aisément. La partie plus dense dans la partie supérieur de l'organisme est son estomac et les ses gonages suspendue par un pédoncule.
+La @fig-vig-aglaura présente plusieurs vignettes de Rhopalonematidae. La forme assez particulière de ce genre permet de l'identifier assez aisément. La partie plus dense dans la partie supérieur de l'organisme est son estomac et les ses gonages suspendue par un pédoncule.
 
 ```{r}
 #| label: "fig-vig-aglaura"
