@@ -13,3 +13,8 @@ tr %>.%
   stringr::str_remove_all(., "/NA") -> tr_dir
 
 fs::dir_create(paste0(training_dir, tr_dir), recurse = TRUE)
+
+
+# Creation d'un .zic file using to prepare a training set with {zooimage}
+#c("ZI1", "[path]",tr_dir) %>.%
+#  cat(., file = "data/mesozooplankton.zic", sep = "\n", append = TRUE)
