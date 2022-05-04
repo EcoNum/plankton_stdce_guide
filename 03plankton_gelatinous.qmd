@@ -9,17 +9,95 @@ vigns <- fs::dir_ls(
 
 ## Tunicata
 
+Les tuniciers constituent un sous-phylum des Chordés. Leur nom provient de la tunique produite par l'épiderme, les recouvrant. Le stade larvaire de ces organismes possède une notochorde (dépourvue au stade adulte) [@ruppert2004].
+
 ### Thaliacea
 
 #### Salpida
 
 ##### salpidae
 
+Ces organismes sont transparents ce qui se marque par le jaune très claire sur les vignette. Le cerclage de bande musculaire présent chez les Doliolida n'est pas présent. Il y a cependant bien la présence de muscle. On ne retrouve pas la forme de tonneaux des Doliolida ( @sec-doliolida ) .
+
+![Vignette (A) et Image (B) de Salpida [@caicci2013].](images/03plankton_gelatinous/salpida.png){width="250"}
+
+La @fig-vig-salpidae présente plusieurs vignettes de Salpidae.
+
+```{r}
+#| label: "fig-vig-salpidae"
+#| fig-cap: "Vignettes de Salpidae"
+plot_vignettes(vigns, group = "Salpidae")
+```
+
+Ce groupe est similaire au groupe `salpida` dans le ZooScanNet (@fig-zsn-salpida) .
+
+::: {#fig-zsn-salpida layout-ncol="2"}
+![](images/zooscannet/salpida/993116.jpg){width="250"}
+
+![](images/zooscannet/salpida/993148.jpg){width="250"}
+
+![](images/zooscannet/salpida/993515.jpg){width="250"}
+
+![](images/zooscannet/salpida/993630.jpg){width="250"}
+
+Images de Salpida du ZooScanNet [@elineau2018].
+:::
+
 #### Pyrosomatida
 
 ##### Pyrosomatida
 
-#### Doliolida
+::: callout-important
+## Nouveau groupe
+
+Dans les précédentes études (et les sets d'apprentissages associées), ce groupe n'a pas été discriminé.
+:::
+
+Les pyrosomes peuvent former de grandes colonies tubulaires de plusieurs mètres. Ils sont constitués de milliers de blastozoïdes dont la tunique est fusionnée et le siphon buccal s'ouvre au centre du tube [@caicci2013].
+
+![Image de pyrosomatida [@caicci2013].](images/03plankton_gelatinous/pyrosomatida.png){#fig-pyrosomatida}
+
+Dans le ZooScanNet, on les retrouve très souvent sous forme de colonies (@fig-zsn-pyrosomatida). Le pharynx est discernable sur chaque image.
+
+::: {#fig-zsn-pyrosomatida}
+![](images/zooscannet/pyrosomatida/14466480.jpg){width="250"}
+
+![](images/zooscannet/pyrosomatida/14466482.jpg){width="250"}
+
+![](images/zooscannet/pyrosomatida/46857337.jpg){width="250"}
+
+![](images/zooscannet/pyrosomatida/46879026.jpg){width="250"}
+
+Images de Pyrosomatida du ZooScanNet [@elineau2018].
+:::
+
+#### Doliolida {#sec-doliolida}
+
+Ces organismes ont l'aspect d'un tonneau symétrique doté d'un cerclage de plusieurs cercles (@fig-doliolida). Les cerclages sont des muscles entourant le corps de l'organisme.
+
+![Vignette (A) et image (B) de Doliolida [@caicci2013].](images/03plankton_gelatinous/doliolida.png){#fig-doliolida width="250"}
+
+La @fig-vig-doliolida présente plusieurs vignettes de Sagittoidea. Cet organisme est transparent comme l'indique les parties jaunes claires sur les vignettes. Les bandes musculaires qui entoure l'organisme apparaissent plus foncée. La cavité plus dense est l'estomac.
+
+```{r}
+#| label: "fig-vig-doliolida"
+#| fig-cap: "Vignettes de Doliolida"
+plot_vignettes(vigns, group = "Doliolida", nx = 3,ny = 2)
+```
+
+Ce groupe est similaire au groupe `doliolida` dans le ZooScanNet ( @fig-zsn-doliolida ).
+
+::: {#fig-zsn-doliolida layout-ncol="2"}
+![](images/zooscannet/doliolida/14431745.jpg){width="200"}
+
+![](images/zooscannet/doliolida/14431819.jpg){width="200"}
+
+![](images/zooscannet/doliolida/14431760.jpg){width="200"}
+
+![](images/zooscannet/doliolida/14431768.jpg){width="200"}
+
+Images de Doliolida du ZooScanNet [@elineau2018]
+:::
 
 ### Appendicularia
 
