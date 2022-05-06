@@ -201,16 +201,16 @@
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>plkt <span class="ot">&lt;-</span> data.io<span class="sc">::</span><span class="fu">read</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"mesoplankton.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>La classification se décompose en 6 niveaux :</p>
+<p>The classification is broken down into 6 levels:</p>
 <ul>
-<li><p>N1 : séparation rapide et pratique en 5 groupes. On retrouve les groupes suivants : Plankton_crustacea, Plankton_dark, Plankton_gelatinous, Plankton_small, alter .</p></li>
-<li><p>N2 : Séparation principalement sur base des phylums en 13 groupes</p></li>
-<li><p>N3 : Séparation principalement sur base des Classes en 31 groupes</p></li>
-<li><p>N4 : Séparation sur base des Ordres (si possible) en 54 groupes</p></li>
-<li><p>N5 : Séparation sur base des Sous-ordres et des Genres en 71 groupes</p></li>
-<li><p>N6 : Séparation sur base des espèces en 22 groupes</p></li>
+<li><p>N1 : quick and convenient separation into 5 groups. The groups are as follows: Plankton_crustacea, Plankton_dark, Plankton_gelatinous, Plankton_small, alter .</p></li>
+<li><p>N2 : Separation mainly on the basis of phyla into 13 groups</p></li>
+<li><p>N3 : Separation mainly on the basis of Class into 31 groupes</p></li>
+<li><p>N4 : Separation on the basis of Orders (if possible) into 54 groups</p></li>
+<li><p>N5 : Separation on the basis of Sub-orders and Genres into 71 groups</p></li>
+<li><p>N6 : Separation on the basis of species into 22 groups</p></li>
 </ul>
-<p>L’arborescence des différents groupes sont visualisable ci-dessous. Une vue sous la forme d’un mindmap est également disponible <a href="https://coggle.it/diagram/XniwI-MesP8BdYNn/t/mesoplankton/46c9eaed5e2a5c6a3292935cfdb71acaf585976bef9c390b482e2f473c587862?present=1">ici</a>.</p>
+<p>The tree structure of the different groups can be viewed below. A mindmap view is also available <a href="https://coggle.it/diagram/XniwI-MesP8BdYNn/t/mesoplankton/46c9eaed5e2a5c6a3292935cfdb71acaf585976bef9c390b482e2f473c587862?present=1">here</a>.</p>
 <div class="cell">
 <div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="st">"training_set/"</span>, <span class="at">type =</span> <span class="st">"directory"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-stdout">
