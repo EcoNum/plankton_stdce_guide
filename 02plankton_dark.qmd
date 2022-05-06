@@ -47,9 +47,9 @@ Bivalvia images from ZooScanNet [@elineau2018]
 In previous studies (and associated training sets), this group was not studied.
 :::
 
-The limacinidae have easily identifiable spiral shells.
+The limacinidae have easily identifiable spiral shells ( @fig-zsn-limacinidae ).
 
-::: {layout-ncol="2"}
+::: {#fig-zsn-limacinidae layout-ncol="2"}
 ![](images/zooscannet/Limacinidae/12795666.jpg){width="100"}
 
 ![](images/zooscannet/Limacinidae/14424352.jpg){width="100"}
@@ -146,3 +146,77 @@ plot_vignettes(vigns, group = "Creseis_virgula")
 ```
 
 ## Annelida
+
+The main characteristic of this phylum is the vermiform and metamerised body in several segments along a longitudinal axis.
+
+### Polychaeta
+
+Parapods are the key to recognising polycheata.
+
+#### Phyllodocida
+
+##### Tomopteridae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The zooscannet includes the `Tomopteridae` group. These organisms have biramidal parapodia and a very flat body ( @fig-zsn-tomopteridae ).
+
+::: {#fig-zsn-tomopteridae layout-ncol="2"}
+![](images/zooscannet/tomopteridae/44728946.jpg){width="200"}
+
+![](images/zooscannet/tomopteridae/44733046.jpg){width="200"}
+
+![](images/zooscannet/tomopteridae/44732665.jpg){width="150"}
+
+![](images/zooscannet/tomopteridae/44758472.jpg){width="200"}
+
+*Tomopteridae* images from ZooScanNet [@elineau2018]
+:::
+
+### Annelida_adult
+
+```{r}
+#| label: "fig-vig-annelida-adult"
+#| fig-cap: "Vignettes of the Annelida"
+plot_vignettes(vigns, group = "Annelida_adult")
+```
+
+The zooscannet includes a similar group named `annelida` (@fig-zsn-annelida-adult).
+
+::: {#fig-zsn-annelida-adult layout-ncol="2"}
+![](images/zooscannet/annelida/14425861.jpg){width="200"}
+
+![](images/zooscannet/annelida/14425862.jpg){width="200"}
+
+![](images/zooscannet/annelida/14425870.jpg){width="150"}
+
+![](images/zooscannet/annelida/14449566.jpg){width="200"}
+
+Annelida images from ZooScanNet [@elineau2018]
+:::
+
+### Annelida_larva
+
+```{r}
+#| label: "fig-vig-annelida-larva"
+#| fig-cap: "Vignettes of the larva of Annelida"
+plot_vignettes(vigns, group = "Annelida_larva")
+```
+
+The zooscannet includes a similar group named `larvae__annelida` (@fig-zsn-annelida-larva).
+
+::: {#fig-zsn-annelida-larva layout-ncol="2"}
+![](images/zooscannet/larvae__annelida/38753354.jpg){width="200"}
+
+![](images/zooscannet/larvae__annelida/42652232.jpg){width="200"}
+
+![](images/zooscannet/larvae__annelida/42813459.jpg){width="150"}
+
+![](images/zooscannet/larvae__annelida/48876917.jpg){width="200"}
+
+Images of the larva of Annelida from ZooScanNet [@elineau2018]
+:::
