@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.188">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -11,6 +11,88 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
 
   <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -39,22 +121,22 @@
     "type": "textbox",
     "limit": 20,
     "language": {
-      "search-no-results-text": "Pas de résultats",
-      "search-matching-documents-text": "documents trouvés",
-      "search-copy-link-title": "Copier le lien vers la recherche",
-      "search-hide-matches-text": "Cacher les correspondances additionnelles",
-      "search-more-match-text": "correspondance de plus dans ce document",
-      "search-more-matches-text": "correspondances de plus dans ce document",
-      "search-clear-button-title": "Effacer",
-      "search-detached-cancel-button-title": "Annuler",
-      "search-submit-button-title": "Envoyer"
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
     }
   }</script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="floating fullcontent">
+<body class="floating">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -73,6 +155,9 @@
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Guide de classification du mesozooplancton en Mer Ligurienne</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/EcoNum/zooimage_mesozooplankton_guide3" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
@@ -84,7 +169,7 @@
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Préface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -126,15 +211,273 @@
     </div>
 </nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">Table of contents</h2>
+<ul>
+<li><a href="#mollusca" id="toc-mollusca" class="nav-link active" data-scroll-target="#mollusca"> <span class="header-section-number">3.1</span> Mollusca</a>
+<ul class="collapse">
+<li><a href="#bivalvia" id="toc-bivalvia" class="nav-link" data-scroll-target="#bivalvia"> <span class="header-section-number">3.1.1</span> Bivalvia</a></li>
+<li><a href="#gastropoda" id="toc-gastropoda" class="nav-link" data-scroll-target="#gastropoda"> <span class="header-section-number">3.1.2</span> Gastropoda</a></li>
+</ul></li>
+<li><a href="#annelida" id="toc-annelida" class="nav-link" data-scroll-target="#annelida"> <span class="header-section-number">3.2</span> Annelida</a></li>
+</ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
 
 <div class="quarto-title"><h1 class="title d-none d-lg-block display-7"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plankton_dark</span></h1></div></header>
 
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/init.R"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vigns <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(training_dir, <span class="st">"Plankton_dark"</span>), </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"file"</span>, <span class="at">glob =</span> <span class="st">"*.png"</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="mollusca" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="mollusca"><span class="header-section-number">3.1</span> Mollusca</h2>
+<section id="bivalvia" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="bivalvia"><span class="header-section-number">3.1.1</span> Bivalvia</h3>
+<section id="bivalvia_larva" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="bivalvia_larva"><span class="header-section-number">3.1.1.1</span> Bivalvia_larva</h4>
+<section id="bivalvia_veliger" class="level5" data-number="3.1.1.1.1">
+<h5 data-number="3.1.1.1.1" class="anchored" data-anchor-id="bivalvia_veliger"><span class="header-section-number">3.1.1.1.1</span> Bivalvia_veliger</h5>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>The shell of the bivalve has two part a clearer convex valve and a darker triangular protuberence on the images called the umbo (<a href="#fig-zsn-bivalvia">Figure&nbsp;<span>3.1</span></a>) . The umbo is above the hinge.</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/bivalvia__mollusca/53372398.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/bivalvia__mollusca/53385265.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/bivalvia__mollusca/54381027.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/bivalvia__mollusca/56068642.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.1: Bivalvia images from ZooScanNet <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="gastropoda" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="gastropoda"><span class="header-section-number">3.1.2</span> Gastropoda</h3>
+<section id="pteropoda" class="level4" data-number="3.1.2.1">
+<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="pteropoda"><span class="header-section-number">3.1.2.1</span> Pteropoda</h4>
+<section id="limacinidae" class="level5" data-number="3.1.2.1.1">
+<h5 data-number="3.1.2.1.1" class="anchored" data-anchor-id="limacinidae"><span class="header-section-number">3.1.2.1.1</span> Limacinidae</h5>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>The limacinidae have easily identifiable spiral shells.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/Limacinidae/12795666.jpg" class="img-fluid" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/Limacinidae/14424352.jpg" class="img-fluid" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/Limacinidae/14431878.jpg" class="img-fluid" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/Limacinidae/14435591.jpg" class="img-fluid" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p>Limacinidae images from ZooScanNet <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="cavoliniidae" class="level5" data-number="3.1.2.1.2">
+<h5 data-number="3.1.2.1.2" class="anchored" data-anchor-id="cavoliniidae"><span class="header-section-number">3.1.2.1.2</span> Cavoliniidae</h5>
+<p>The Cavoliniidae is shaped like a cone ( a french fry cones ;) ). The cone becomes wider and wider from bottom to top ( <a href="#fig-vig-cavoliniidae">Figure&nbsp;<span>3.2</span></a> )</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Cavoliniidae"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-cavoliniidae" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="02plankton_dark_files/figure-html/fig-vig-cavoliniidae-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.2: Vignettes of the Cavoliniidae</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This group is similar to the <code>Cavoliniidae</code> group in ZooScanNet ( <a href="#fig-zsn-cavoliniidae">Figure&nbsp;<span>3.3</span></a> )</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/cavoliniidae/12747178.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/cavoliniidae/12749812.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/cavoliniidae/14435422.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/cavoliniidae/14435466.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.3: Cavoliniidae images from ZooScanNet <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="creseideae" class="level5" data-number="3.1.2.1.3">
+<h5 data-number="3.1.2.1.3" class="anchored" data-anchor-id="creseideae"><span class="header-section-number">3.1.2.1.3</span> Creseideae</h5>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The distinctions are interesting but these classes include few individuals.</p>
+</div>
+</div>
+<section id="sec-creseis-acicula" class="level6" data-number="3.1.2.1.3.1">
+<h6 data-number="3.1.2.1.3.1" class="anchored" data-anchor-id="sec-creseis-acicula"><span class="header-section-number">3.1.2.1.3.1</span> Creseis_acicula</h6>
+<p><em>Creseis acicula</em> is the name recognised by IZBN. <em>Creseis clava</em> is not recognised by IZBN <span class="citation" data-cites="horton2022">(<a href="references.html#ref-horton2022" role="doc-biblioref">Horton et al. 2022</a>)</span>. The name of this group The name of this group is changed from <span class="citation" data-cites="dugauquier2019">Dugauquier (<a href="references.html#ref-dugauquier2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p><em>C. acicula</em> has a long and very thin shell.</p>
+<p>The ZooScanNet includes the <code>Creseis</code> group and does not go further in the classification <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>. However, it is possible to refine this classification and recognise <em>Creseis acicula</em> in the ZooScanNet images ( <a href="#fig-zsn-creseis-acicula">Figure&nbsp;<span>3.4</span></a> ).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_acicula/56067989.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_acicula/56075121.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_acicula/56075735.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_acicula/56082258.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.4: <em>Creseis acicula</em> images from ZooScanNet <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="creseis_conica" class="level6" data-number="3.1.2.1.3.2">
+<h6 data-number="3.1.2.1.3.2" class="anchored" data-anchor-id="creseis_conica"><span class="header-section-number">3.1.2.1.3.2</span> Creseis_conica</h6>
+<p>The <em>C. conica</em> has a slightly curved conical shell but less marked than for <em>Creseis virgula</em>, see <a href="#sec-creseis-virugla">Section&nbsp;<span>3.1.2.1.3.3</span></a> (<a href="#fig-vig-creseis-conica">Figure&nbsp;<span>3.5</span></a>). The shell is also shorter and wider than that of <em>Creseis acicula</em>, see <a href="#sec-creseis-acicula">Section&nbsp;<span>3.1.2.1.3.1</span></a> .</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Creseis_conica"</span>, <span class="at">ny =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-creseis-conica" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="02plankton_dark_files/figure-html/fig-vig-creseis-conica-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.5: Vignettes of the <em>Creseis conica</em></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The ZooScanNet includes the <code>Creseis</code> group and does not go further in the classification <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>. However, it is possible to refine this classification and recognise <em>Creseis acicula</em> in the ZooScanNet images ( <a href="#fig-zsn-creseis-conica">Figure&nbsp;<span>3.6</span></a> ).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 57.1%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_conica/13626234.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 42.9%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_conica/14425565.jpg" class="img-fluid figure-img" width="150"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_conica/14424380.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/creseidae/creseis_conica/14425575.jpg" class="img-fluid figure-img" width="200"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.6: <em>Creseis conica</em> images from ZooScanNet <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="sec-creseis-virugla" class="level6" data-number="3.1.2.1.3.3">
+<h6 data-number="3.1.2.1.3.3" class="anchored" data-anchor-id="sec-creseis-virugla"><span class="header-section-number">3.1.2.1.3.3</span> Creseis_virgula</h6>
+<p>The shell of <em>Creseis virgula</em> is conical with a pronounced curvature at the apex ( <a href="#fig-vig-creseis-virgula">Figure&nbsp;<span>3.7</span></a> ).</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Creseis_virgula"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-creseis-virgula" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="02plankton_dark_files/figure-html/fig-vig-creseis-virgula-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.7: Vignettes of the <em>Creseis virgula</em></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section id="annelida" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="annelida"><span class="header-section-number">3.2</span> Annelida</h2>
 
 
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-dugauquier2019" class="csl-entry" role="doc-biblioentry">
+Dugauquier, Rémy. 2019. <span>“Classification Supervisée Du Mésozooplancton de Calvi : Mise Au Point de Méthodes d’étude Des Classes Rares d’un Set d’apprentissage Et Mise En Contexte Environnemental.”</span> PhD thesis, Mons, Belgique.
+</div>
+<div id="ref-elineau2018" class="csl-entry" role="doc-biblioentry">
+Elineau, Amanda, Corinne Desnos, Laetitia Jalabert, Marion Olivier, Jean-Baptiste Romagnan, Manoela Costa Brandao, Fabien Lombard, et al. 2018. <span>“ZooScanNet: Plankton Images Captured with the ZooScan.”</span> <a href="https://doi.org/10.17882/55741">https://doi.org/10.17882/55741</a>.
+</div>
+<div id="ref-horton2022" class="csl-entry" role="doc-biblioentry">
+Horton, T., A. Kroh, S. Ahyong, N. Bailly, R. Bieler, C. B. Boyko, S. N. Brandão, et al. 2022. <span>“World Register of Marine Species (WoRMS),”</span> May. <a href="https://www.marinespecies.org">https://www.marinespecies.org</a>.
+</div>
+</div>
+</section>
 </main> <!-- /main -->
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

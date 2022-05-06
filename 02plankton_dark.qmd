@@ -1,1 +1,148 @@
 # Plankton_dark
+
+```{r}
+source("R/init.R")
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_dark"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+## Mollusca
+
+### Bivalvia
+
+#### Bivalvia_larva
+
+##### Bivalvia_veliger
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The shell of the bivalve has two part a clearer convex valve and a darker triangular protuberence on the images called the umbo (@fig-zsn-bivalvia) . The umbo is above the hinge.
+
+::: {#fig-zsn-bivalvia layout-ncol="2"}
+![](images/zooscannet/bivalvia__mollusca/53372398.jpg){width="100"}
+
+![](images/zooscannet/bivalvia__mollusca/53385265.jpg){width="100"}
+
+![](images/zooscannet/bivalvia__mollusca/54381027.jpg){width="100"}
+
+![](images/zooscannet/bivalvia__mollusca/56068642.jpg){width="100"}
+
+Bivalvia images from ZooScanNet [@elineau2018]
+:::
+
+### Gastropoda
+
+#### Pteropoda
+
+##### Limacinidae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The limacinidae have easily identifiable spiral shells.
+
+::: {layout-ncol="2"}
+![](images/zooscannet/Limacinidae/12795666.jpg){width="100"}
+
+![](images/zooscannet/Limacinidae/14424352.jpg){width="100"}
+
+![](images/zooscannet/Limacinidae/14431878.jpg){width="100"}
+
+![](images/zooscannet/Limacinidae/14435591.jpg){width="100"}
+
+Limacinidae images from ZooScanNet [@elineau2018]
+:::
+
+##### Cavoliniidae
+
+The Cavoliniidae is shaped like a cone ( a french fry cones ;) ). The cone becomes wider and wider from bottom to top ( @fig-vig-cavoliniidae )
+
+```{r}
+#| label: "fig-vig-cavoliniidae"
+#| fig-cap: "Vignettes of the Cavoliniidae"
+plot_vignettes(vigns, group = "Cavoliniidae")
+```
+
+This group is similar to the `Cavoliniidae` group in ZooScanNet ( @fig-zsn-cavoliniidae )
+
+::: {#fig-zsn-cavoliniidae layout-ncol="2"}
+![](images/zooscannet/cavoliniidae/12747178.jpg){width="200"}
+
+![](images/zooscannet/cavoliniidae/12749812.jpg){width="200"}
+
+![](images/zooscannet/cavoliniidae/14435422.jpg){width="200"}
+
+![](images/zooscannet/cavoliniidae/14435466.jpg){width="200"}
+
+Cavoliniidae images from ZooScanNet [@elineau2018]
+:::
+
+##### Creseideae
+
+::: callout-note
+The distinctions are interesting but these classes include few individuals.
+:::
+
+###### Creseis_acicula {#sec-creseis-acicula}
+
+*Creseis acicula* is the name recognised by IZBN. *Creseis clava* is not recognised by IZBN [@horton2022]. The name of this group The name of this group is changed from @dugauquier2019.
+
+*C. acicula* has a long and very thin shell.
+
+The ZooScanNet includes the `Creseis` group and does not go further in the classification [@elineau2018]. However, it is possible to refine this classification and recognise *Creseis acicula* in the ZooScanNet images ( @fig-zsn-creseis-acicula ).
+
+::: {#fig-zsn-creseis-acicula layout-ncol="2"}
+![](images/zooscannet/creseidae/creseis_acicula/56067989.jpg){width="200"}
+
+![](images/zooscannet/creseidae/creseis_acicula/56075121.jpg){width="200"}
+
+![](images/zooscannet/creseidae/creseis_acicula/56075735.jpg){width="200"}
+
+![](images/zooscannet/creseidae/creseis_acicula/56082258.jpg){width="200"}
+
+*Creseis acicula* images from ZooScanNet [@elineau2018]
+:::
+
+###### Creseis_conica
+
+The *C. conica* has a slightly curved conical shell but less marked than for *Creseis virgula*, see @sec-creseis-virugla (@fig-vig-creseis-conica). The shell is also shorter and wider than that of *Creseis acicula*, see @sec-creseis-acicula .
+
+```{r}
+#| label: "fig-vig-creseis-conica"
+#| fig-cap: "Vignettes of the *Creseis conica*"
+plot_vignettes(vigns, group = "Creseis_conica", ny = 2)
+```
+
+The ZooScanNet includes the `Creseis` group and does not go further in the classification [@elineau2018]. However, it is possible to refine this classification and recognise *Creseis acicula* in the ZooScanNet images ( @fig-zsn-creseis-conica ).
+
+::: {#fig-zsn-creseis-conica layout-ncol="2"}
+![](images/zooscannet/creseidae/creseis_conica/13626234.jpg){width="200"}
+
+![](images/zooscannet/creseidae/creseis_conica/14425565.jpg){width="150"}
+
+![](images/zooscannet/creseidae/creseis_conica/14424380.jpg){width="200"}
+
+![](images/zooscannet/creseidae/creseis_conica/14425575.jpg){width="200"}
+
+*Creseis conica* images from ZooScanNet [@elineau2018]
+:::
+
+###### Creseis_virgula {#sec-creseis-virugla}
+
+The shell of *Creseis virgula* is conical with a pronounced curvature at the apex ( @fig-vig-creseis-virgula ).
+
+```{r}
+#| label: "fig-vig-creseis-virgula"
+#| fig-cap: "Vignettes of the *Creseis virgula*"
+plot_vignettes(vigns, group = "Creseis_virgula")
+```
+
+## Annelida

@@ -39,9 +39,9 @@ Plankton_crustacea,Crustacea_other,Ostracoda,,,
 Plankton_dark,Mollusca,Bivalvia,Bivalvia_larva,Bivalvia_veliger,
 Plankton_dark,Mollusca,Cephalopoda,Cephalopoda_planktonic,,
 Plankton_dark,Mollusca,Gastropoda,Pteropoda,Limacinidae,
-Plankton_dark,Mollusca,Gastropoda,Pteropoda,Cavolinidae,
-Plankton_dark,Mollusca,Gastropoda,Pteropoda,Creseideae,Creseis_clava
-Plankton_dark,Mollusca,Gastropoda,Pteropoda,Creseideae,Creseis_conica_cherchiae
+Plankton_dark,Mollusca,Gastropoda,Pteropoda,Cavoliniidae,
+Plankton_dark,Mollusca,Gastropoda,Pteropoda,Creseideae,Creseis_acicula
+Plankton_dark,Mollusca,Gastropoda,Pteropoda,Creseideae,Creseis_conica
 Plankton_dark,Mollusca,Gastropoda,Pteropoda,Creseideae,Creseis_virgula
 Plankton_dark,Annelida,Polychaeta,Phyllodocida,Tomopteridae,
 Plankton_dark,Annelida,Annelida_adult,,,
