@@ -220,3 +220,33 @@ The zooscannet includes a similar group named `larvae__annelida` (@fig-zsn-annel
 
 Images of the larva of Annelida from ZooScanNet [@elineau2018]
 :::
+
+## Vertebrata
+
+### Actinopterygii
+
+#### Actinopterygii_larva
+
+##### Actinopterygii_alevin
+
+```{r}
+#| label: "fig-vig-actinopterygii_alevin"
+#| fig-cap: "Vignettes of the Actinopterygii alevin" 
+plot_vignettes(vigns, group = "Actinopterygii_alevin", ny = 2, nx = 2)
+```
+
+##### Actinopterygii_fry_type1
+
+```{r}
+#| label: "fig-vig-actinopterygii_fry-type1"
+#| fig-cap: "Vignettes of the Actinopterydii type 1" 
+plot_vignettes(vigns, group = "Actinopterygii_fry_type1", ny = 2, nx = 3)
+```
+
+##### Actinopterygii_fry_type2
+
+```{r}
+#| label: "fig-vig-actinopterygii_fry-type2"
+#| fig-cap: "Vignettes of the Actinopterydii type 2" 
+plot_vignettes(vigns, group = "Actinopterygii_fry_type2", ny = 2, nx = 3)
+```
