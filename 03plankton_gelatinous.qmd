@@ -9,7 +9,7 @@ vigns <- fs::dir_ls(
 
 ## Tunicata
 
-Les tuniciers constituent un sous-phylum des Chordés. Leur nom provient de la tunique produite par l'épiderme, les recouvrant. Le stade larvaire de ces organismes possède une notochorde (dépourvue au stade adulte) [@ruppert2004].
+Tunicates are a subphylum of the Chordates. Their name comes from the tunic produced by the epidermis covering them. The larval stage of these organisms has a notochord (not present in the adult stage) [@ruppert2004].
 
 ### Thaliacea
 
@@ -17,19 +17,19 @@ Les tuniciers constituent un sous-phylum des Chordés. Leur nom provient de la t
 
 ##### salpidae
 
-Ces organismes sont transparents ce qui se marque par le jaune très claire sur les vignette. Le cerclage de bande musculaire présent chez les Doliolida n'est pas présent. Il y a cependant bien la présence de muscle. On ne retrouve pas la forme de tonneaux des Doliolida ( @sec-doliolida ) .
+These organisms are transparent, which is indicated by the very light yellow on the vignettes. The band of muscle present in the Doliolida is not present. There is, however, the presence of muscle. The barrel shape of the Doliolida is not present. ( @sec-doliolida ).
 
-![Vignette (A) et Image (B) de Salpida [@caicci2013].](images/03plankton_gelatinous/salpida.png){width="250"}
+![Vignette (A) and Image (B) of Salpida [@caicci2013].](images/03plankton_gelatinous/salpida.png){width="250"}
 
-La @fig-vig-salpidae présente plusieurs vignettes de Salpidae.
+@fig-vig-salpidae shows several vignettes of Salpidae.
 
 ```{r}
 #| label: "fig-vig-salpidae"
-#| fig-cap: "Vignettes de Salpidae"
+#| fig-cap: "Vignettes of the Salpidae"
 plot_vignettes(vigns, group = "Salpidae")
 ```
 
-Ce groupe est similaire au groupe `salpida` dans le ZooScanNet (@fig-zsn-salpida) .
+This group is similar to the `salpida` group in ZooScanNet (@fig-zsn-salpida).
 
 ::: {#fig-zsn-salpida layout-ncol="2"}
 ![](images/zooscannet/salpida/993116.jpg){width="250"}
@@ -40,7 +40,7 @@ Ce groupe est similaire au groupe `salpida` dans le ZooScanNet (@fig-zsn-salpida
 
 ![](images/zooscannet/salpida/993630.jpg){width="250"}
 
-Images de Salpida du ZooScanNet [@elineau2018].
+Images of the Salpida from ZooScanNet [@elineau2018].
 :::
 
 #### Pyrosomatida
@@ -48,18 +48,18 @@ Images de Salpida du ZooScanNet [@elineau2018].
 ##### Pyrosomatida
 
 ::: callout-important
-## Nouveau groupe
+## New group
 
-Dans les précédentes études (et les sets d'apprentissages associées), ce groupe n'a pas été discriminé.
+In previous studies (and associated training sets), this group was not studied.
 :::
 
-Les pyrosomes peuvent former de grandes colonies tubulaires de plusieurs mètres. Ils sont constitués de milliers de blastozoïdes dont la tunique est fusionnée et le siphon buccal s'ouvre au centre du tube [@caicci2013].
+Pyrosomatida forms large tubular colonies several metres long. They are made up of thousands of blastozoids whose tunics are grouped together and the buccal siphon opens in the centre of the tube [@caicci2013].
 
-![Image de pyrosomatida [@caicci2013].](images/03plankton_gelatinous/pyrosomatida.png){#fig-pyrosomatida}
+![Image of the Pyrosomatida [@caicci2013].](images/03plankton_gelatinous/pyrosomatida.png){#fig-pyrosomatida}
 
-Dans le ZooScanNet, on les retrouve très souvent sous forme de colonies (@fig-zsn-pyrosomatida). Le pharynx est discernable sur chaque image.
+In the ZooScanNet, they are very often found in the form of colonies (@fig-zsn-pyrosomatida). The pharynx is discernible in each image
 
-::: {#fig-zsn-pyrosomatida}
+::: {#fig-zsn-pyrosomatida layout-ncol="2"}
 ![](images/zooscannet/pyrosomatida/14466480.jpg){width="250"}
 
 ![](images/zooscannet/pyrosomatida/14466482.jpg){width="250"}
@@ -68,24 +68,24 @@ Dans le ZooScanNet, on les retrouve très souvent sous forme de colonies (@fig-z
 
 ![](images/zooscannet/pyrosomatida/46879026.jpg){width="250"}
 
-Images de Pyrosomatida du ZooScanNet [@elineau2018].
+Images of Pyrosomatida from ZooScanNet [@elineau2018].
 :::
 
 #### Doliolida {#sec-doliolida}
 
-Ces organismes ont l'aspect d'un tonneau symétrique doté d'un cerclage de plusieurs cercles (@fig-doliolida). Les cerclages sont des muscles entourant le corps de l'organisme.
+These organisms have the appearance of a symmetrical barrel with a ring of several circles (@fig-doliolida). Circles are muscles surrounding the body of the organism
 
-![Vignette (A) et image (B) de Doliolida [@caicci2013].](images/03plankton_gelatinous/doliolida.png){#fig-doliolida width="250"}
+![Vignette (A) and image (B) of Doliolida [@caicci2013].](images/03plankton_gelatinous/doliolida.png){#fig-doliolida width="250"}
 
-La @fig-vig-doliolida présente plusieurs vignettes de Sagittoidea. Cet organisme est transparent comme l'indique les parties jaunes claires sur les vignettes. Les bandes musculaires qui entoure l'organisme apparaissent plus foncée. La cavité plus dense est l'estomac.
+@fig-vig-doliolida shows several vignettes of Sagittoidea. These organisms are transparent as indicated by the light yellow parts on the vignettes. The muscle bands around the organisms appear darker.
 
 ```{r}
 #| label: "fig-vig-doliolida"
-#| fig-cap: "Vignettes de Doliolida"
+#| fig-cap: "Vignettes of Doliolida"
 plot_vignettes(vigns, group = "Doliolida", nx = 3,ny = 2)
 ```
 
-Ce groupe est similaire au groupe `doliolida` dans le ZooScanNet ( @fig-zsn-doliolida ).
+This group is similar to `doliolida` in ZooScanNet ( @fig-zsn-doliolida ).
 
 ::: {#fig-zsn-doliolida layout-ncol="2"}
 ![](images/zooscannet/doliolida/14431745.jpg){width="200"}
@@ -96,24 +96,24 @@ Ce groupe est similaire au groupe `doliolida` dans le ZooScanNet ( @fig-zsn-doli
 
 ![](images/zooscannet/doliolida/14431768.jpg){width="200"}
 
-Images de Doliolida du ZooScanNet [@elineau2018]
+Images of Doliolida from ZooScanNet [@elineau2018]
 :::
 
 ### Appendicularia
 
-Les Appendicularia conserve leur queue à l'état adulte. Ce caractère néoténique les rend facilement discernable. Ces organismes sont divisée en deux parties : la tête et le tronc ( @fig-appendicularia ).
+Appendidicularia keep their tails in the adult state. This neotenic character makes them easily identifiable. These organisms are divided into two parts: the trunk and the tail ( @fig-appendicularia ).
 
-![Vignette d'Appendicularia: A tête, B tronc [@quivythomas2018].](images/03plankton_gelatinous/appendicularia_comp.png){#fig-appendicularia}
+![Vignette of Appendicularia: A trunk B tail [@quivythomas2018].](images/03plankton_gelatinous/appendicularia_comp.png){#fig-appendicularia}
 
 #### Copelata
 
-##### Oikopleuridae
+##### Oikopleuridae {#sec-oikopleuridae}
 
-Au niveau de la tête les glandes, les organes (intestin, oeisophage, glandes,...)sont de grandes tailles et donne une coloration très foncée à la tête de l'organisme. Les cellules subchrodal qui entoure la notochorde donne une impression plus dense de la queue. (@fig-oikopleuridae)
+The trunk is globular and all organs are tightened. The colour of the trunk is very dark. The subchordal cells arround the notochord give a dark of the tail (@fig-oikopleuridae).
 
-![Vignette (A) et image (B) d'Oikopleuridae [@hecq2014]](images/03plankton_gelatinous/oikopleuridae.png){#fig-oikopleuridae width="250"}
+![Vignette (A) and image (B) of Oikopleuridae [@hecq2014]](images/03plankton_gelatinous/oikopleuridae.png){#fig-oikopleuridae width="250"}
 
-La @fig-vig-oikopleuridae présente plusieurs vignettes d'Oikopleuridae.
+@fig-vig-oikopleuridae shows severals vignettes of Oikopleuridae.
 
 ```{r}
 #| label: "fig-vig-oikopleuridae"
@@ -123,33 +123,33 @@ plot_vignettes(vigns, group = "Oikopleuridae")
 
 ##### Fritillariidae
 
-La tête de ces organismes est moins foncée sur les vignettes (@fig-fritillariidae). On retrouve un forme ressemblant à un marteau ou un pioche. La queue semble moins dense mais assez large.
+The trunk of these organisims is elongated. The trunk is less dense and compact than that of the OIkoploridae ( see @sec-oikopleuridae ). The colour of the tail of these organisms is rather light on the vignettes (@fig-fritillariidae).
 
-![Vignette (A) et image de Fritillariidae [@hecq2014]](images/03plankton_gelatinous/frittillariidae.png){#fig-fritillariidae}
+![Vignette (A) and image of Fritillariidae [@hecq2014]](images/03plankton_gelatinous/frittillariidae.png){#fig-fritillariidae}
 
-La @fig-vig-fritillariidae présente plusieurs vignettes de Fritillariidae.
+@fig-vig-fritillariidae shows several vignettes of Fritillariidae.
 
 ```{r}
 #| label: "fig-vig-fritillariidae"
-#| fig-cap: "Vignettes de Fritillariidae"
+#| fig-cap: "Vignettes of Fritillariidae"
 plot_vignettes(vigns, group = "Fritillariidae")
 ```
 
 #### Appendicularia_tail
 
-Lors des traits de filets, l'organisme est souvent endommagé. On retrouve de ce fait dans les échantillons des queues d'appendiculaire (@fig-appendicularia-tail). Les bandes foncées entourant la notochorde est généralement visible [@gorsky2017].
+The organism is often damaged during the haul. As a result, appendicular tails are found in the samples (@fig-appendicularia-tail). There is a light band arround two dark bands [@gorsky2017].
 
-![Vignette d'une queue d'appendicularia : A masse musculaire, B notochorde [@quivythomas2018].](images/03plankton_gelatinous/appendicularia_tails.png){#fig-appendicularia-tail width="250"}
+![Vignette of the Appendicularia tail : muscle, B notochord [@quivythomas2018].](images/03plankton_gelatinous/appendicularia_tails.png){#fig-appendicularia-tail width="250"}
 
-La @fig-vig-appendicularia-tail présente plusieurs vignettes de queue d'Appendiculaira.
+@fig-vig-appendicularia-tail shows several vignettes of the Appendicularia tail.
 
 ```{r}
 #| label: "fig-vig-appendicularia-tail"
-#| fig-cap: "Vignettes de queues d'Appendicularia."
+#| fig-cap: "Vignettes of Appendicularia tails."
 plot_vignettes(vigns, group = "Appendicularia_tail")
 ```
 
-Ce groupe est similaire au groupe `tail__appendicularia` dans le ZooScanNet ( @fig-zsn-appendicularia-tail ).
+This group is similar to the `tail__appendicularia` group in ZooScanNet ( @fig-zsn-appendicularia-tail ).
 
 ::: {#fig-zsn-appendicularia-tail layout-ncol="2"}
 ![](images/zooscannet/tail__appendicularia/993497.jpg){width="250"}
@@ -160,7 +160,7 @@ Ce groupe est similaire au groupe `tail__appendicularia` dans le ZooScanNet ( @f
 
 ![](images/zooscannet/tail__appendicularia/34881065.jpg){width="100"}
 
-Images de queues d'Appendicularia du ZooScanNet [@elineau2018].
+Images of Appendicularia tails fromZooScanNet [@elineau2018].
 :::
 
 ## Chaetognatha
