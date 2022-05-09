@@ -1,1 +1,65 @@
 # Plankton_small
+
+## Egg_Small_larva
+
+### Small_larva
+
+#### Echinoidea_pluteus {#sec-echinoidae-pluteus}
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Echinoidea is a class of Echinoderms. The main characteristics of Echinoderms are have a pentamerous radial symmetry, an internal skelleton and mutable connective tissue. Sea stars, sea cucumbers and sea urchins can be found in this phylum. The Sea urchins are the main organisms of the class Echinoidae. The Echinoplueus is the free swimming larva of Echinoidae. This larva is small in size and has six pairs of long larval arms. It looks like an ophiopluteus. However, ophiopluteus have two longer larval arms than the others (@sec-ophiuroidae-pluteus). The Echinoidae has regular and irregular externals structures. The larva of regular species have all their arms in the same direction (@fig-zsn-reg-echinoidae-pluteus)
+
+::: {#fig-zsn-reg-echinoidae-pluteus layout-ncol="2"}
+![](images/zooscannet/echinoidea/48826351.jpg){width="100"}
+
+![](images/zooscannet/echinoidea/48826397.jpg){width="100"}
+
+![](images/zooscannet/echinoidea/53271046.jpg){width="100"}
+
+![](images/zooscannet/echinoidea/53271457.jpg){width="100"}
+
+Image of regular echinopluteus [@elineau2018]
+:::
+
+The larva of irregular species is a long larval arm opposite the other arms (@fig-zsn-irreg-echinoidae-pluteus).
+
+::: {#fig-zsn-irreg-echinoidae-pluteus layout-ncol="2"}
+![](images/zooscannet/echinoidea/48715938.jpg){width="100"}
+
+![](images/zooscannet/echinoidea/48719679.jpg){width="100"}
+
+![](images/zooscannet/echinoidea/48722299.jpg){width="100"}
+
+![](images/zooscannet/echinoidea/48722631.jpg)
+
+Image of irregular echinopluteus [@elineau2018]
+:::
+
+#### Ophiuroidea_pluteus {#sec-ophiuroidae-pluteus}
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Ophiuroidae is a class of Echinoderms. The ophioplueus is the free swimming larva of Ophiuroidae. This larva is also small in size and looks like an echinopluteus. It t has 8 long larval arms, 2 of which are very long (@fig-zsn-ophiuroidae-pluteus).
+
+::: {#fig-zsn-ophiuroidae-pluteus layout-ncol="2"}
+![](images/zooscannet/ophiuroidea/48080154.jpg){width="100"}
+
+![](images/zooscannet/ophiuroidea/48078503.jpg){width="100"}
+
+![](images/zooscannet/ophiuroidea/48078488.jpg){width="100"}
+
+![](images/zooscannet/ophiuroidea/48013472.jpg){width="100"}
+
+Image of ophioplueus [@elineau2018].
+:::
+
+## Chromista
