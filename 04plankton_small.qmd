@@ -1,5 +1,12 @@
 # Plankton_small
 
+```{r}
+source("R/init.R")
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_small"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
 ## Egg_Small_larva
 
 ### Small_larva
@@ -12,7 +19,7 @@
 In previous studies (and associated training sets), this group was not studied.
 :::
 
-The Echinoidea is a class of Echinoderms. The main characteristics of Echinoderms are have a pentamerous radial symmetry, an internal skelleton and mutable connective tissue. Sea stars, sea cucumbers and sea urchins can be found in this phylum. The Sea urchins are the main organisms of the class Echinoidae. The Echinoplueus is the free swimming larva of Echinoidae. This larva is small in size and has six pairs of long larval arms. It looks like an ophiopluteus. However, ophiopluteus have two longer larval arms than the others (@sec-ophiuroidae-pluteus). The Echinoidae has regular and irregular externals structures. The larva of regular species have all their arms in the same direction (@fig-zsn-reg-echinoidae-pluteus)
+The Echinoidea is a class of Echinoderms. The main characteristics of Echinoderms are have a pentamerous radial symmetry, an internal skelleton and a mutable connective tissue. Sea stars, sea cucumbers and sea urchins can be found in this phylum. The Sea urchins are the main organisms of the class Echinoidae. The Echinoplueus is the free swimming larva of Echinoidae. This larva is small in size and has six pairs of long larval arms. It looks like an ophiopluteus. However, ophiopluteus have two longer larval arms than the others (@sec-ophiuroidae-pluteus). The Echinoidae has regular and irregular externals structures. The larva of regular species have all their arms in the same direction (@fig-zsn-reg-echinoidae-pluteus)
 
 ::: {#fig-zsn-reg-echinoidae-pluteus layout-ncol="2"}
 ![](images/zooscannet/echinoidea/48826351.jpg){width="100"}
@@ -59,7 +66,127 @@ The Ophiuroidae is a class of Echinoderms. The ophioplueus is the free swimming 
 
 ![](images/zooscannet/ophiuroidea/48013472.jpg){width="100"}
 
-Image of ophioplueus [@elineau2018].
+Images of ophiopluteus [@elineau2018].
+:::
+
+#### Crustacea_small_larva
+
+##### Crustacea_metanauplius
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The metanauplius have a long body with six appendages ( antennules, antennae, and mandibles). On the vignettes, the six appendages are not always visible (@fig-zsn-crustacea-metanauplius).
+
+```{r}
+#| label: "fig-vig-crustacea-metanauplius"
+#| fig-cap: "Vignettes of the metanauplius"
+plot_vignettes(vigns, group = "Crustacea_metanauplius", nx = 2, ny = 2)
+```
+
+This group is similar to the `metanauplii` group in ZooScanNet ( @fig-zsn-crustacea-metanauplius ).
+
+::: {#fig-zsn-crustacea-metanauplius layout-ncol="2"}
+![](images/zooscannet/metanauplii/44726486.jpg){width="150"}
+
+![](images/zooscannet/metanauplii/44727610.jpg){width="150"}
+
+![](images/zooscannet/metanauplii/44726627.jpg){width="150"}
+
+![](images/zooscannet/metanauplii/44727173.jpg){width="150"}
+
+Images of metanauplius [@elineau2018]
+:::
+
+##### Crustacea_nauplius
+
+The Nauplius of the crustacea have Egg-shaped body with six appendages ( antennules, antennae, and mandibles) ( @fig-vig-crustacea-nauplius ).
+
+```{r}
+#| label: "fig-vig-crustacea-nauplius"
+#| fig-cap: "Vignettes of the nauplius"
+plot_vignettes(vigns, group = "Crustacea_nauplius", nx = 5, ny = 5)
+```
+
+This group is similar to the `nauplii__Crustaceae` group in ZooScanNet ( @fig-zsn-crustacea-nauplius ).
+
+::: {#fig-zsn-crustacea-nauplius layout-ncol="3"}
+![](images/zooscannet/nauplii__crustacea/34853256.jpg){width="100"}
+
+![](images/zooscannet/nauplii__crustacea/34858473.jpg){width="100"}
+
+![](images/zooscannet/nauplii__crustacea/34925848.jpg){width="100"}
+
+![](images/zooscannet/nauplii__crustacea/34924064.jpg){width="100"}
+
+![](images/zooscannet/nauplii__crustacea/42554043.jpg){width="100"}
+
+![](images/zooscannet/nauplii__crustacea/42554557.jpg){width="100"}
+
+Images of nauplii [@elineau2018].
+:::
+
+##### Cirripedia_nauplius
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
+
+##### Cirripedia_cypris
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+This group is similar to the `nauplii__Crustaceae` group in ZooScanNet ( @fig-zsn-cirripedia-cypris ). This larvae have an elongated caparace with a nauplii eye darker on the ZooScanNet images. The appendages are not always visible.
+
+::: {#fig-zsn-cirripedia-cypris layout-ncol="2"}
+![](images/zooscannet/cypris/44712675.jpg){width="100"}
+
+![](images/zooscannet/cypris/44712985.jpg)
+
+![](images/zooscannet/cypris/46763801.jpg){width="100"}
+
+![](images/zooscannet/cypris/48677908.jpg){width="100"}
+
+Images of the cypris stage of Cirripedia [@elineau2018]
+:::
+
+#### Bryozoa_cyphonautes
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Bryozoa is a phylum of aquatic organisms. The main characteristics of bryozoa is the lophophore. The lophophore is ring of tentacles around the mouth.
+
+The cyphonautes have a triangular shape. At the base of the triangle is a coronna. It is a ciliated band (@fig-zsn-bryozoa-cyphonautes).
+
+::: {#fig-zsn-bryozoa-cyphonautes layout-ncol="2"}
+![](images/zooscannet/cyphonaute/42561938.jpg){width="100"}
+
+![](images/zooscannet/cyphonaute/42612031.jpg){width="100"}
+
+![](images/zooscannet/cyphonaute/42631970.jpg){width="100"}
+
+![](images/zooscannet/cyphonaute/42708875.jpg){width="100"}
+
+Images of cyphonautes [@elineau2018]
 :::
 
 ## Chromista
