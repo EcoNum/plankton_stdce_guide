@@ -61,7 +61,7 @@ The limacinidae have easily identifiable spiral shells ( @fig-zsn-limacinidae ).
 Limacinidae images from ZooScanNet [@elineau2018]
 :::
 
-##### Cavoliniidae
+##### Cavoliniidae {#sec-cavoliniidae}
 
 The Cavoliniidae is shaped like a cone ( a french fry cones ;) ). The cone becomes wider and wider from bottom to top ( @fig-vig-cavoliniidae )
 

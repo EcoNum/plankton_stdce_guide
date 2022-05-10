@@ -189,4 +189,50 @@ The cyphonautes have a triangular shape. At the base of the triangle is a coronn
 Images of cyphonautes [@elineau2018]
 :::
 
+### Egg
+
+#### Mollusca_egg
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+In the ZooSCanNet, there are a specific group for egg of *Cavolina inflexa.* They are often found in groups.These eggs are cone-shaped (@fig-zsn-mollusca-egg). They have a similar shape to the adults (@sec-cavoliniidae).
+
+::: {#fig-zsn-mollusca-egg layout-ncol="2"}
+![](images/zooscannet/egg__cavolina_inflexa/34724052.jpg){width="100"}
+
+![](images/zooscannet/egg__cavolina_inflexa/34724067.jpg){width="100"}
+
+![](images/zooscannet/egg__cavolina_inflexa/34848878.jpg){width="100"}
+
+![](images/zooscannet/egg__cavolina_inflexa/34898398.jpg){width="100"}
+
+Images of the eggs of *Cavolina inflexa* [@elineau2018]
+:::
+
+#### Actinopterygii_egg
+
+@crechriou2015 have proposed an identification guide of pelagic eggs of mediterranean fish.
+
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
+
+##### Actinopterygii_egg_stage1
+
+##### Actinopterygii_egg_stage2
+
+##### Actinopterygii_egg_stage3
+
+##### Actinopterygii_egg_stage4
+
+##### Actinopterygii_egg_stage5
+
+#### Egg_other
+
 ## Chromista
