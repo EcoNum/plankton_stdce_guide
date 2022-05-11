@@ -220,7 +220,10 @@
 <li><a href="#small_larva" id="toc-small_larva" class="nav-link" data-scroll-target="#small_larva"> <span class="header-section-number">5.1.1</span> Small_larva</a></li>
 <li><a href="#egg" id="toc-egg" class="nav-link" data-scroll-target="#egg"> <span class="header-section-number">5.1.2</span> Egg</a></li>
 </ul></li>
-<li><a href="#chromista" id="toc-chromista" class="nav-link" data-scroll-target="#chromista"> <span class="header-section-number">5.2</span> Chromista</a></li>
+<li><a href="#chromista" id="toc-chromista" class="nav-link" data-scroll-target="#chromista"> <span class="header-section-number">5.2</span> Chromista</a>
+<ul class="collapse">
+<li><a href="#bacillariophyceae" id="toc-bacillariophyceae" class="nav-link" data-scroll-target="#bacillariophyceae"> <span class="header-section-number">5.2.1</span> Bacillariophyceae</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -231,10 +234,7 @@
 <div class="quarto-title"><h1 class="title d-none d-lg-block display-7"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Plankton_small</span></h1></div></header>
 
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/init.R"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vigns <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(training_dir, <span class="st">"Plankton_small"</span>), </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"file"</span>, <span class="at">glob =</span> <span class="st">"*.png"</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 </div>
 <section id="egg_small_larva" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="egg_small_larva"><span class="header-section-number">5.1</span> Egg_Small_larva</h2>
@@ -357,7 +357,7 @@ New group
 </div>
 <p>The metanauplius have a long body with six appendages ( antennules, antennae, and mandibles). On the vignettes, the six appendages are not always visible (<a href="#fig-zsn-crustacea-metanauplius">Figure&nbsp;<span>5.5</span></a>).</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Crustacea_metanauplius"</span>, <span class="at">nx =</span> <span class="dv">2</span>, <span class="at">ny =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Crustacea_metanauplius"</span>, <span class="at">nx =</span> <span class="dv">2</span>, <span class="at">ny =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-vig-crustacea-metanauplius" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -394,7 +394,7 @@ New group
 <h5 data-number="5.1.1.3.2" class="anchored" data-anchor-id="crustacea_nauplius"><span class="header-section-number">5.1.1.3.2</span> Crustacea_nauplius</h5>
 <p>The Nauplius of the crustacea have Egg-shaped body with six appendages ( antennules, antennae, and mandibles) ( <a href="#fig-vig-crustacea-nauplius">Figure&nbsp;<span>5.6</span></a> ).</p>
 <div class="cell">
-<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Crustacea_nauplius"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Crustacea_nauplius"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-vig-crustacea-nauplius" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -583,7 +583,10 @@ New group
 </section>
 <section id="actinopterygii_egg" class="level4" data-number="5.1.2.2">
 <h4 data-number="5.1.2.2" class="anchored" data-anchor-id="actinopterygii_egg"><span class="header-section-number">5.1.2.2</span> Actinopterygii_egg</h4>
-<p><span class="citation" data-cites="crechriou2015">Crec’hriou, Marinaro, and Planes (<a href="references.html#ref-crechriou2015" role="doc-biblioref">2015</a>)</span> have proposed an identification guide of pelagic eggs of mediterranean fish.</p>
+<p>The identification of fish eggs is complicated. Different criteria are used such as the structure of the yolk, the presence (or not) of peri-vitelin space or the diameter of the egg. There are exceptions like anchovy eggs which are oblong and not spherical.</p>
+<p><span class="citation" data-cites="crechriou2015">Crec’hriou, Marinaro, and Planes (<a href="references.html#ref-crechriou2015" role="doc-biblioref">2015</a>)</span> have proposed an identification guide of pelagic eggs of mediterranean fish. This guide uses eggs at stage 5.</p>
+<section id="actinopterygii_egg_stage1" class="level5" data-number="5.1.2.2.1">
+<h5 data-number="5.1.2.2.1" class="anchored" data-anchor-id="actinopterygii_egg_stage1"><span class="header-section-number">5.1.2.2.1</span> Actinopterygii_egg_stage1</h5>
 <div class="callout-warning callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -597,29 +600,204 @@ In progress
 <p>This section is not yet completed</p>
 </div>
 </div>
-<section id="actinopterygii_egg_stage1" class="level5" data-number="5.1.2.2.1">
-<h5 data-number="5.1.2.2.1" class="anchored" data-anchor-id="actinopterygii_egg_stage1"><span class="header-section-number">5.1.2.2.1</span> Actinopterygii_egg_stage1</h5>
 </section>
 <section id="actinopterygii_egg_stage2" class="level5" data-number="5.1.2.2.2">
 <h5 data-number="5.1.2.2.2" class="anchored" data-anchor-id="actinopterygii_egg_stage2"><span class="header-section-number">5.1.2.2.2</span> Actinopterygii_egg_stage2</h5>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+In progress
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This section is not yet completed</p>
+</div>
+</div>
 </section>
 <section id="actinopterygii_egg_stage3" class="level5" data-number="5.1.2.2.3">
 <h5 data-number="5.1.2.2.3" class="anchored" data-anchor-id="actinopterygii_egg_stage3"><span class="header-section-number">5.1.2.2.3</span> Actinopterygii_egg_stage3</h5>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+In progress
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This section is not yet completed</p>
+</div>
+</div>
 </section>
 <section id="actinopterygii_egg_stage4" class="level5" data-number="5.1.2.2.4">
 <h5 data-number="5.1.2.2.4" class="anchored" data-anchor-id="actinopterygii_egg_stage4"><span class="header-section-number">5.1.2.2.4</span> Actinopterygii_egg_stage4</h5>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+In progress
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This section is not yet completed</p>
+</div>
+</div>
 </section>
 <section id="actinopterygii_egg_stage5" class="level5" data-number="5.1.2.2.5">
 <h5 data-number="5.1.2.2.5" class="anchored" data-anchor-id="actinopterygii_egg_stage5"><span class="header-section-number">5.1.2.2.5</span> Actinopterygii_egg_stage5</h5>
+<p>At this stage, the embryo is clearly visible and surrounds the yolk sac. The oil globule is usually visible (<a href="#fig-actinopterygii-stage5">Figure&nbsp;<span>5.11</span></a>).</p>
+<div id="fig-actinopterygii-stage5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/04plankton_small/actinopterygii_egg_stage5.png" class="img-fluid figure-img" width="250"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.11: Schema of fish eggs at stage 5 <span class="citation" data-cites="rodriguez2017">(<a href="references.html#ref-rodriguez2017" role="doc-biblioref">Rodriguez, Alemany, and Garcia 2017</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+<p><a href="#fig-vig-actinopterygii-egg-stage5">Figure&nbsp;<span>5.12</span></a> shows several vignettes of actinopterygii eggs at stage 5.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Actinopterygii_egg_stage5"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-actinopterygii-egg-stage5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="04plankton_small_files/figure-html/fig-vig-actinopterygii-egg-stage5-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.12: Vignettes of actinopterygii eggs at stage 5</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In the ZooScanNet, <code>egg__actinopterygii</code> group consists mainly of eggs at stage 5 (<a href="#fig-zsn-egg-actinopterygii">Figure&nbsp;<span>5.13</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg__actinopterygii/993430.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg__actinopterygii/995770.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg__actinopterygii/995886.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg__actinopterygii/996918.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.13: Images of actinopterygii eggs at stage 5 <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
 </section>
 </section>
 <section id="egg_other" class="level4" data-number="5.1.2.3">
 <h4 data-number="5.1.2.3" class="anchored" data-anchor-id="egg_other"><span class="header-section-number">5.1.2.3</span> Egg_other</h4>
+<p>This group includes vignettes that are not fish eggs and mollusc eggs. The <a href="#fig-vig-egg-other">Figure&nbsp;<span>5.14</span></a> shows several eggs containing nauplii.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Egg_other"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-egg-other" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="04plankton_small_files/figure-html/fig-vig-egg-other-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.14: Vignettes of the eggs of nauplia</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This group is similar to the <code>egg__other</code> group in ZooScanNet (<span class="quarto-unresolved-ref">?fig-zsn-sgg-other</span>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg_other/57768473.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg_other/57128518.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg_other/54343956.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/egg_other/57745070.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.15: Image of various eggs <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
 </section>
 </section>
 </section>
 <section id="chromista" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="chromista"><span class="header-section-number">5.2</span> Chromista</h2>
+<section id="bacillariophyceae" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="bacillariophyceae"><span class="header-section-number">5.2.1</span> Bacillariophyceae</h3>
+<section id="coscinodiscales" class="level4" data-number="5.2.1.1">
+<h4 data-number="5.2.1.1" class="anchored" data-anchor-id="coscinodiscales"><span class="header-section-number">5.2.1.1</span> Coscinodiscales</h4>
+<section id="coscinodiscus" class="level5" data-number="5.2.1.1.1">
+<h5 data-number="5.2.1.1.1" class="anchored" data-anchor-id="coscinodiscus"><span class="header-section-number">5.2.1.1.1</span> Coscinodiscus</h5>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>Coscinodiscus is a diatom. The main characteristics of diatom is frustule (cell wall made of silica). The Coscinodiscus have a cylindrical shape. The</p>
+<p>The base of the cylinder is spherical with a darker periphery ( <a href="#fig-zsn-coscinodiscus1">Figure&nbsp;<span>5.16</span></a> ) while the edge is square with light and dark bands ( <a href="#fig-zsn-coscinodiscus2">Figure&nbsp;<span>5.17</span></a> ).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53341501.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53341513.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53341529.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53341536.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.16: Images of the base of the Coscinodiscus</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53102894.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53103011.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53103019.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/coscinodiscus/53341492.jpg" class="img-fluid figure-img" width="50"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.17: Images of the edge of Coscinodiscus</figcaption><p></p>
+</figure>
+</div>
 
 
 
@@ -630,7 +808,13 @@ Crec’hriou, Romain, Jean-Yves Marinaro, and Serge Planes. 2015. <span>“Advan
 <div id="ref-elineau2018" class="csl-entry" role="doc-biblioentry">
 Elineau, Amanda, Corinne Desnos, Laetitia Jalabert, Marion Olivier, Jean-Baptiste Romagnan, Manoela Costa Brandao, Fabien Lombard, et al. 2018. <span>“ZooScanNet: Plankton Images Captured with the ZooScan.”</span> <a href="https://doi.org/10.17882/55741">https://doi.org/10.17882/55741</a>.
 </div>
+<div id="ref-rodriguez2017" class="csl-entry" role="doc-biblioentry">
+Rodriguez, J. M., F. Alemany, and A. Garcia. 2017. <em>A Guide to the Eggs and Larvae of 100 Common Western Mediterranean Sea Body Fish Species</em>. Rome, Italy: FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS. <a href="https://www.fao.org/documents/card/fr/c/35f5bb5c-bee9-46c3-a6d5-e92b00fe05c7/">https://www.fao.org/documents/card/fr/c/35f5bb5c-bee9-46c3-a6d5-e92b00fe05c7/</a>.
 </div>
+</div>
+</section>
+</section>
+</section>
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">

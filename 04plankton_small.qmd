@@ -1,6 +1,6 @@
 # Plankton_small
 
-```{r}
+```{r setup, echo=FALSE}
 source("R/init.R")
 vigns <- fs::dir_ls(
   here::here(training_dir, "Plankton_small"), 
@@ -215,7 +215,11 @@ Images of the eggs of *Cavolina inflexa* [@elineau2018]
 
 #### Actinopterygii_egg
 
-@crechriou2015 have proposed an identification guide of pelagic eggs of mediterranean fish.
+The identification of fish eggs is complicated. Different criteria are used such as the structure of the yolk, the presence (or not) of peri-vitelin space or the diameter of the egg. There are exceptions like anchovy eggs which are oblong and not spherical.
+
+@crechriou2015 have proposed an identification guide of pelagic eggs of mediterranean fish. This guide uses eggs at stage 5.
+
+##### Actinopterygii_egg_stage1
 
 ::: callout-warning
 ## In progress
@@ -223,16 +227,120 @@ Images of the eggs of *Cavolina inflexa* [@elineau2018]
 This section is not yet completed
 :::
 
-##### Actinopterygii_egg_stage1
-
 ##### Actinopterygii_egg_stage2
+
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
 
 ##### Actinopterygii_egg_stage3
 
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
+
 ##### Actinopterygii_egg_stage4
+
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
 
 ##### Actinopterygii_egg_stage5
 
+At this stage, the embryo is clearly visible and surrounds the yolk sac. The oil globule is usually visible (@fig-actinopterygii-stage5).
+
+![Schema of fish eggs at stage 5 [@rodriguez2017].](images/04plankton_small/actinopterygii_egg_stage5.png){#fig-actinopterygii-stage5 width="250"}
+
+@fig-vig-actinopterygii-egg-stage5 shows several vignettes of actinopterygii eggs at stage 5.
+
+```{r}
+#| label: "fig-vig-actinopterygii-egg-stage5"
+#| fig-cap: "Vignettes of actinopterygii eggs at stage 5"
+plot_vignettes(vigns, group = "Actinopterygii_egg_stage5")
+```
+
+In the ZooScanNet, `egg__actinopterygii` group consists mainly of eggs at stage 5 (@fig-zsn-egg-actinopterygii).
+
+::: {#fig-zsn-egg-actinopterygii layout-ncol="2"}
+![](images/zooscannet/egg__actinopterygii/993430.jpg){width="100"}
+
+![](images/zooscannet/egg__actinopterygii/995770.jpg){width="100"}
+
+![](images/zooscannet/egg__actinopterygii/995886.jpg){width="100"}
+
+![](images/zooscannet/egg__actinopterygii/996918.jpg){width="100"}
+
+Images of actinopterygii eggs at stage 5 [@elineau2018]
+:::
+
 #### Egg_other
 
+This group includes vignettes that are not fish eggs and mollusc eggs. The @fig-vig-egg-other shows several eggs containing nauplii.
+
+```{r}
+#| label: "fig-vig-egg-other"
+#| fig-cap: "Vignettes of the eggs of nauplia"
+plot_vignettes(vigns, group = "Egg_other")
+```
+
+This group is similar to the `egg__other` group in ZooScanNet (@fig-zsn-sgg-other).
+
+::: {#fig-zsn-egg-other layout-ncol="2"}
+![](images/zooscannet/egg_other/57768473.jpg){width="100"}
+
+![](images/zooscannet/egg_other/57128518.jpg){width="100"}
+
+![](images/zooscannet/egg_other/54343956.jpg){width="100"}
+
+![](images/zooscannet/egg_other/57745070.jpg){width="100"}
+
+Image of various eggs [@elineau2018]
+:::
+
 ## Chromista
+
+### Bacillariophyceae
+
+#### Coscinodiscales
+
+##### Coscinodiscus
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Coscinodiscus is a diatom. The main characteristics of diatom is frustule (cell wall made of silica). The Coscinodiscus have a cylindrical shape. The
+
+The base of the cylinder is spherical with a darker periphery ( @fig-zsn-coscinodiscus1 ) while the edge is square with light and dark bands ( @fig-zsn-coscinodiscus2 ).
+
+::: {#fig-zsn-coscinodiscus1 layout-ncol="2"}
+![](images/zooscannet/coscinodiscus/53341501.jpg){width="50"}
+
+![](images/zooscannet/coscinodiscus/53341513.jpg){width="50"}
+
+![](images/zooscannet/coscinodiscus/53341529.jpg){width="50"}
+
+![](images/zooscannet/coscinodiscus/53341536.jpg){width="50"}
+
+Images of the base of the Coscinodiscus
+:::
+
+::: {#fig-zsn-coscinodiscus2 layout-ncol="2"}
+![](images/zooscannet/coscinodiscus/53102894.jpg){width="50"}
+
+![](images/zooscannet/coscinodiscus/53103011.jpg){width="50"}
+
+![](images/zooscannet/coscinodiscus/53103019.jpg){width="50" height="44"}
+
+![](images/zooscannet/coscinodiscus/53341492.jpg){width="50"}
+
+Images of the edge of Coscinodiscus
+:::
