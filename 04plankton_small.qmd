@@ -289,7 +289,7 @@ This group includes vignettes that are not fish eggs and mollusc eggs. The @fig-
 plot_vignettes(vigns, group = "Egg_other")
 ```
 
-This group is similar to the `egg__other` group in ZooScanNet (@fig-zsn-sgg-other).
+This group is similar to the `egg__other` group in ZooScanNet (@fig-zsn-egg-other).
 
 ::: {#fig-zsn-egg-other layout-ncol="2"}
 ![](images/zooscannet/egg_other/57768473.jpg){width="100"}
@@ -317,7 +317,7 @@ Image of various eggs [@elineau2018]
 In previous studies (and associated training sets), this group was not studied.
 :::
 
-Coscinodiscus is a diatom. The main characteristics of diatom is frustule (cell wall made of silica). The Coscinodiscus have a cylindrical shape. The
+Coscinodiscus is a diatom. The main characteristics of diatom is frustule (cell wall made of silica). The Coscinodiscus have a cylindrical shape.
 
 The base of the cylinder is spherical with a darker periphery ( @fig-zsn-coscinodiscus1 ) while the edge is square with light and dark bands ( @fig-zsn-coscinodiscus2 ).
 
@@ -343,4 +343,146 @@ Images of the base of the Coscinodiscus
 ![](images/zooscannet/coscinodiscus/53341492.jpg){width="50"}
 
 Images of the edge of Coscinodiscus
+:::
+
+### Dinophyceae
+
+Dinophyceae is a class of Dinoflagellates. They are very abundant in both marine and freshwater environments. They include autotrophs, mixotrophs and grazers. For example, the genus Symbiodinium is known for its symbiosis with corals [@taylor2008].
+
+#### Gonyaulacales
+
+##### Ceratium
+
+They can be recognised by the 3 horns (2 lateral horns and 1 apical horn) formed by cellulose plates named *theca* ( @fig-vig-ceratium ).
+
+```{r}
+#| label: "fig-vig-ceratium"
+#| fig-cap: "Vignettes of Ceratium."
+plot_vignettes(vigns, group = "Ceratium", nx = 4)
+```
+
+This group is similar to the `Neoceratium` group in ZooScanNet ( @fig-zsn-neoceratium ). These organisms are often found in groups
+
+::: {#fig-zsn-neoceratium layout-ncol="2"}
+![](images/zooscannet/neoceratium/34893085.jpg){width="100"}
+
+![](images/zooscannet/neoceratium/34935363.jpg){width="100"}
+
+![](images/zooscannet/neoceratium/38753358.jpg){width="100"}
+
+![](images/zooscannet/neoceratium/42563111.jpg){width="100"}
+
+Images of neoceratium [@elineau2018]
+:::
+
+#### Noctilucales
+
+##### Noctiluca
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+These organisms are known for bioluminescence. They are spherical with a dense eccentric nucleus. They have a denser groove on the images ( @fig-zsn-noctiluca)
+
+::: {#fig-zsn-noctiluca layout-ncol="2"}
+![](images/zooscannet/noctiluca/43013408.jpg){width="100"}
+
+![](images/zooscannet/noctiluca/45027366.jpg){width="100"}
+
+![](images/zooscannet/noctiluca/48113477.jpg){width="100"}
+
+![](images/zooscannet/noctiluca/48169834.jpg){width="100"}
+
+Image of Noctiluca [@elineau2018]
+:::
+
+### Rhizaria
+
+#### Cercozoa
+
+##### Thecofilosea
+
+*Aulacantha scolymantha* is the best known species of phaeodaria. These organisms are spherical surrounded by radiale spines with a dense central capsule [@nakamura2015]. From the centre outwards, we have a dense capsule, a lighter spherical sleracoma and spines ( @fig-aulacantha ).
+
+![Vignette (A) and image (B, Haeckel (1862)) of *Aulacantha scolymantha*](images/04plankton_small/aulacantha.png){#fig-aulacantha width="250"}
+
+@fig-vig-thecofilosea shows several vignettes of *Aulacantha scolymantha*.
+
+```{r}
+#| label: "fig-vig-thecofilosea"
+#| fig-cap: "Vignettes of Thecofilosea."
+plot_vignettes(vigns, group = "Thecofilosea", nx = 4)
+```
+
+This group is similar to the `Phaeodaria` group in ZooScanNet ( @fig-zsn-phaeodaria ).
+
+::: {#fig-zsn-phaeodaria layout-ncol="2"}
+![](images/zooscannet/phaeodaria/992592.jpg){width="100"}
+
+![](images/zooscannet/phaeodaria/992615.jpg)
+
+![](images/zooscannet/phaeodaria/992623.jpg){width="100"}
+
+![](images/zooscannet/phaeodaria/995138.jpg){width="100"}
+
+Images of Phaeodaria
+:::
+
+#### Foraminifera
+
+##### Nodosariata
+
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+#### Radiozoa
+
+##### Acantharia
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The nucleus is dense and surrounded by long spines.
+
+This group is similar to the `Acantharea` group in ZooScanNet ( @fig-zsn-acantharea ).
+
+::: {#fig-zsn-acantharea layout-ncol="2"}
+![](images/zooscannet/acantharea/42755554.jpg){width="100"}
+
+![](images/zooscannet/acantharea/42940054.jpg){width="100"}
+
+![](images/zooscannet/acantharea/44725540.jpg){width="100"}
+
+![](images/zooscannet/acantharea/44727127.jpg){width="100"}
+
+Image of Acantharea [@elineau2018].
+:::
+
+##### Polycystina
+
+::: callout-warning
+## In progress
+
+This section is not yet completed
+:::
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
 :::
