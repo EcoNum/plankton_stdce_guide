@@ -11,6 +11,88 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
 
   <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -54,7 +136,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="floating fullcontent">
+<body class="floating">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -129,15 +211,445 @@
     </div>
 </nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">Table of contents</h2>
+<ul>
+<li><a href="#branchiopoda" id="toc-branchiopoda" class="nav-link active" data-scroll-target="#branchiopoda"> <span class="header-section-number">2.1</span> Branchiopoda</a>
+<ul class="collapse">
+<li><a href="#onychopoda" id="toc-onychopoda" class="nav-link" data-scroll-target="#onychopoda"> <span class="header-section-number">2.1.1</span> Onychopoda</a></li>
+<li><a href="#sec-ctenopoda" id="toc-sec-ctenopoda" class="nav-link" data-scroll-target="#sec-ctenopoda"> <span class="header-section-number">2.1.2</span> Ctenopoda</a></li>
+</ul></li>
+<li><a href="#malacostraca" id="toc-malacostraca" class="nav-link" data-scroll-target="#malacostraca"> <span class="header-section-number">2.2</span> Malacostraca</a>
+<ul class="collapse">
+<li><a href="#decapoda" id="toc-decapoda" class="nav-link" data-scroll-target="#decapoda"> <span class="header-section-number">2.2.1</span> Decapoda</a></li>
+<li><a href="#euphausiacea" id="toc-euphausiacea" class="nav-link" data-scroll-target="#euphausiacea"> <span class="header-section-number">2.2.2</span> Euphausiacea</a></li>
+<li><a href="#malacostraca_other" id="toc-malacostraca_other" class="nav-link" data-scroll-target="#malacostraca_other"> <span class="header-section-number">2.2.3</span> Malacostraca_other</a></li>
+<li><a href="#amphipoda" id="toc-amphipoda" class="nav-link" data-scroll-target="#amphipoda"> <span class="header-section-number">2.2.4</span> Amphipoda</a></li>
+<li><a href="#isopoda" id="toc-isopoda" class="nav-link" data-scroll-target="#isopoda"> <span class="header-section-number">2.2.5</span> Isopoda</a></li>
+<li><a href="#stomatopoda" id="toc-stomatopoda" class="nav-link" data-scroll-target="#stomatopoda"> <span class="header-section-number">2.2.6</span> Stomatopoda</a></li>
+</ul></li>
+<li><a href="#ostracoda" id="toc-ostracoda" class="nav-link" data-scroll-target="#ostracoda"> <span class="header-section-number">2.3</span> Ostracoda</a></li>
+</ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
 
 <div class="quarto-title"><h1 class="title d-none d-lg-block display-7"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Plankton_crustacea</span></h1></div></header>
 
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/init.R"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vigns <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(training_dir, <span class="st">"Plankton_crustacea"</span>), </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"file"</span>, <span class="at">glob =</span> <span class="st">"*.png"</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="branchiopoda" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="branchiopoda"><span class="header-section-number">2.1</span> Branchiopoda</h2>
+<section id="onychopoda" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="onychopoda"><span class="header-section-number">2.1.1</span> Onychopoda</h3>
+<p>Onychopoda is an order of branchiopoda.</p>
+<section id="evadne" class="level4" data-number="2.1.1.1">
+<h4 data-number="2.1.1.1" class="anchored" data-anchor-id="evadne"><span class="header-section-number">2.1.1.1</span> Evadne</h4>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>Evadne have a conical and pointed shell. The compound eye is dark and the carapace is light on the vignette <a href="#fig-vig-evadne">Figure&nbsp;<span>2.1</span></a> .</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Evadne"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-evadne" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-evadne-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.1: Vignettes of Evadne</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This group is similar to the <code>Evadne</code> group in ZooScanNet (<a href="#fig-zsn-evadne">Figure&nbsp;<span>2.2</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/evadne/14436029.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/evadne/14436165.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/evadne/48746570.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/evadne/48798223.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.2: Images of Evadne <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="podon" class="level4" data-number="2.1.1.2">
+<h4 data-number="2.1.1.2" class="anchored" data-anchor-id="podon"><span class="header-section-number">2.1.1.2</span> Podon</h4>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>Podon are an Onychopoda as Evadne. The head of the Evadne is in the prolongation of the carapace whereas for the podon there is a break between the head and the carapace</p>
+<p>This group is similar to the <code>Podon</code> group in ZooScanNet (<a href="#fig-zsn-podon">Figure&nbsp;<span>2.3</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/podon/14470311.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/podon/14470317.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/podon/48784889.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/podon/57745513.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.3: Images of Podon <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-ctenopoda" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="sec-ctenopoda"><span class="header-section-number">2.1.2</span> Ctenopoda</h3>
+<section id="sec-penilia" class="level4" data-number="2.1.2.1">
+<h4 data-number="2.1.2.1" class="anchored" data-anchor-id="sec-penilia"><span class="header-section-number">2.1.2.1</span> Penilia</h4>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>Penilia has two well-marked antennae giving a V-shapean. A spine is very pronounced.</p>
+<p>This group is similar to the <code>Penilia</code> group in ZooScanNet (<a href="#fig-zsn-penilia">Figure&nbsp;<span>2.4</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/penilia/14436886.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/penilia/14436889.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/penilia/14436908.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/penilia/14436931.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.4: Images of Penilia <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="malacostraca" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="malacostraca"><span class="header-section-number">2.2</span> Malacostraca</h2>
+<section id="decapoda" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="decapoda"><span class="header-section-number">2.2.1</span> Decapoda</h3>
+</section>
+<section id="euphausiacea" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="euphausiacea"><span class="header-section-number">2.2.2</span> Euphausiacea</h3>
+<p>One of the well-known species of this order is the krill.</p>
+<section id="euphausiacea_calyptopsis" class="level4" data-number="2.2.2.1">
+<h4 data-number="2.2.2.1" class="anchored" data-anchor-id="euphausiacea_calyptopsis"><span class="header-section-number">2.2.2.1</span> Euphausiacea_calyptopsis</h4>
+<p>Calyptopsis is one of the development stages of the euphausiacea. Calyptopis have an almost right angle between the carapace and the telson. The carapace is clear. The carapace is wider than the telson (<a href="#fig-vig-euphasiacea-calyptopsis">Figure&nbsp;<span>2.5</span></a>).</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Euphausiacea_calyptopsis"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-euphasiacea-calyptopsis" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-euphasiacea-calyptopsis-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.5: Vignettes of the calyptopsis of Euphasiacea</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This group is similar to the <code>Calyptopsis</code> group in ZooScanNet (<a href="#fig-zsn-calyptopsis">Figure&nbsp;<span>2.6</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/calyptopsis/12746501.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/calyptopsis/12746702.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/calyptopsis/12746863.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/calyptopsis/12746863.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.6: Images of Calyptopsis <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="malacostraca_other" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="malacostraca_other"><span class="header-section-number">2.2.3</span> Malacostraca_other</h3>
+</section>
+<section id="amphipoda" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="amphipoda"><span class="header-section-number">2.2.4</span> Amphipoda</h3>
+<section id="senticaudata" class="level4" data-number="2.2.4.1">
+<h4 data-number="2.2.4.1" class="anchored" data-anchor-id="senticaudata"><span class="header-section-number">2.2.4.1</span> Senticaudata</h4>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+In progress
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This section is not yet complete</p>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>The Suborder of Senitcaudata includes the gammaridae. The head and the peraeon are continuous. The eyes are small.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Senticaudata"</span>, <span class="at">nx =</span> <span class="dv">2</span>, <span class="at">ny =</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-senticaudata" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-senticaudata-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.7: Vignettes of Senticaudata</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This group is similar to the <code>Gammaridea</code> group in ZooScanNet (<a href="#fig-zsn-gammaridae">Figure&nbsp;<span>2.8</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/gammaridea/46733472.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/gammaridea/48687332.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/gammaridea/48834758.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/gammaridea/48867702.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.8: Images of Gammaridea <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="hyperiidea" class="level4" data-number="2.2.4.2">
+<h4 data-number="2.2.4.2" class="anchored" data-anchor-id="hyperiidea"><span class="header-section-number">2.2.4.2</span> Hyperiidea</h4>
+<p>The hyperiidea are not a very present group. There are few images in the ZooScanNet <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>. We find in the vignettes of Phronimidae, Platyscelidae or Oxycephalidae (<a href="#fig-vig-hyperiidea">Figure&nbsp;<span>2.9</span></a>).</p>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Hyperiidae"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-hyperiidea" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-hyperiidea-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.9: Vignettes of Hyperiidae</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This group is similar to the <code>Hyperiidea</code> group in ZooScanNet (<a href="#fig-zsn-hyperiidea">Figure&nbsp;<span>2.10</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/hyperiidea/44936148.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/hyperiidea/44938016.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/hyperiidea/44978052.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/hyperiidea/45038448.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.10: Images of Hyperiidea <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="isopoda" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="isopoda"><span class="header-section-number">2.2.5</span> Isopoda</h3>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+In progress
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This section is not yet complete</p>
+</div>
+</div>
+<p>Very few organisms were found in previous studies <span class="citation" data-cites="dugauquier2019">(<a href="references.html#ref-dugauquier2019" role="doc-biblioref">Dugauquier 2019</a>)</span>. The main characteristics are … (<a href="#fig-vig-isopoda">Figure&nbsp;<span>2.11</span></a>).</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Isopoda"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-isopoda" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-isopoda-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.11: Vignettes of Isopoda</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="stomatopoda" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="stomatopoda"><span class="header-section-number">2.2.6</span> Stomatopoda</h3>
+<p>The Stomatopoda are known mainly because they contain the mantis shrimps, predators of fish, molluscs and other crustaceans <span class="citation" data-cites="ruppert2004">(<a href="references.html#ref-ruppert2004" role="doc-biblioref">Ruppert, Fox, and Barnes 2004</a>)</span>. Very few organisms were found in previous studies <span class="citation" data-cites="dugauquier2019">(<a href="references.html#ref-dugauquier2019" role="doc-biblioref">Dugauquier 2019</a>)</span>.These organisms are easily identifiable.</p>
+<section id="stomatopoda_antizoea" class="level4" data-number="2.2.6.1">
+<h4 data-number="2.2.6.1" class="anchored" data-anchor-id="stomatopoda_antizoea"><span class="header-section-number">2.2.6.1</span> Stomatopoda_antizoea</h4>
+<p>Antizoea have a long rostrum and two long spines . The eyes are darker on the vignette (<a href="#fig-vig-stomatopoda-antizoea">Figure&nbsp;<span>2.12</span></a>). These organisms look like darts.</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"antizoea"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-stomatopoda-antizoea" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-stomatopoda-antizoea-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.12: Vignettes of the antizoea of Stomatopoda</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="stomatopoda_pseudozoea" class="level4" data-number="2.2.6.2">
+<h4 data-number="2.2.6.2" class="anchored" data-anchor-id="stomatopoda_pseudozoea"><span class="header-section-number">2.2.6.2</span> Stomatopoda_pseudozoea</h4>
+<p>The pseudozoa larva looks like a mantis (<a href="#fig-vig-stomatopoda-pseudozoea">Figure&nbsp;<span>2.13</span></a>).</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"pseudozoea"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-stomatopoda-pseudozoea" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="01plankton_crustacea_files/figure-html/fig-vig-stomatopoda-pseudozoea-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.13: Vignettes of the antizoea of Stomatopoda</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="ostracoda" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="ostracoda"><span class="header-section-number">2.3</span> Ostracoda</h2>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+New group
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In previous studies (and associated training sets), this group was not studied.</p>
+</div>
+</div>
+<p>This group is similar to the <code>Ostracoda</code> group in ZooScanNet (<a href="#fig-zsn-ostracoda">Figure&nbsp;<span>2.14</span></a>).</p>
+<div class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/ostracoda/14431906.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/ostracoda/14431918.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/ostracoda/14431942.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/zooscannet/ostracoda/14441258.jpg" class="img-fluid figure-img" width="100"></p>
+</div>
+</div>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 2.14: Images of Ostracoda <span class="citation" data-cites="elineau2018">(<a href="references.html#ref-elineau2018" role="doc-biblioref">Elineau et al. 2018</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
 
 
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-dugauquier2019" class="csl-entry" role="doc-biblioentry">
+Dugauquier, Rémy. 2019. <span>“Classification Supervisée Du Mésozooplancton de Calvi : Mise Au Point de Méthodes d’étude Des Classes Rares d’un Set d’apprentissage Et Mise En Contexte Environnemental.”</span> PhD thesis, Mons, Belgique.
+</div>
+<div id="ref-elineau2018" class="csl-entry" role="doc-biblioentry">
+Elineau, Amanda, Corinne Desnos, Laetitia Jalabert, Marion Olivier, Jean-Baptiste Romagnan, Manoela Costa Brandao, Fabien Lombard, et al. 2018. <span>“ZooScanNet: Plankton Images Captured with the ZooScan.”</span> <a href="https://doi.org/10.17882/55741">https://doi.org/10.17882/55741</a>.
+</div>
+<div id="ref-ruppert2004" class="csl-entry" role="doc-biblioentry">
+Ruppert, Edward E., Richard S. Fox, and Robert D. Barnes. 2004. <em>Invertebrate Zoology: A Functional Evolutionary Approach</em>. 7th ed. Belmont, CA: Thomson-Brooks/Cole.
+</div>
+</div>
+</section>
 </main> <!-- /main -->
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -1,1 +1,252 @@
 # Plankton_crustacea
+
+```{r}
+source("R/init.R")
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_crustacea"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+## Branchiopoda
+
+### Onychopoda
+
+Onychopoda is an order of branchiopoda.
+
+#### Evadne
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Evadne have a conical and pointed shell. The compound eye is dark and the carapace is light on the vignette @fig-vig-evadne .
+
+```{r}
+#| label: "fig-vig-evadne"
+#| fig-cap: "Vignettes of Evadne"
+plot_vignettes(vigns, group = "Evadne", nx = 3, ny =3)
+```
+
+This group is similar to the `Evadne` group in ZooScanNet (@fig-zsn-evadne).
+
+::: {#fig-zsn-evadne layout-ncol="2"}
+![](images/zooscannet/evadne/14436029.jpg){width="100"}
+
+![](images/zooscannet/evadne/14436165.jpg){width="100"}
+
+![](images/zooscannet/evadne/48746570.jpg){width="100"}
+
+![](images/zooscannet/evadne/48798223.jpg){width="100"}
+
+Images of Evadne [@elineau2018]
+:::
+
+#### Podon
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Podon are an Onychopoda as Evadne. The head of the Evadne is in the prolongation of the carapace whereas for the podon there is a break between the head and the carapace
+
+This group is similar to the `Podon` group in ZooScanNet (@fig-zsn-podon).
+
+::: {#fig-zsn-podon layout-ncol="2"}
+![](images/zooscannet/podon/14470311.jpg){width="100"}
+
+![](images/zooscannet/podon/14470317.jpg){width="100"}
+
+![](images/zooscannet/podon/48784889.jpg){width="100"}
+
+![](images/zooscannet/podon/57745513.jpg){width="100"}
+
+Images of Podon [@elineau2018].
+:::
+
+### Ctenopoda {#sec-ctenopoda}
+
+#### Penilia {#sec-penilia}
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Penilia has two well-marked antennae giving a V-shapean. A spine is very pronounced.
+
+This group is similar to the `Penilia` group in ZooScanNet (@fig-zsn-penilia).
+
+::: {#fig-zsn-penilia layout-ncol="2"}
+![](images/zooscannet/penilia/14436886.jpg){width="100"}
+
+![](images/zooscannet/penilia/14436889.jpg){width="100"}
+
+![](images/zooscannet/penilia/14436908.jpg){width="100"}
+
+![](images/zooscannet/penilia/14436931.jpg){width="100"}
+
+Images of Penilia [@elineau2018].
+:::
+
+## Malacostraca
+
+### Decapoda
+
+### Euphausiacea
+
+One of the well-known species of this order is the krill.
+
+#### Euphausiacea_calyptopsis
+
+Calyptopsis is one of the development stages of the euphausiacea. Calyptopis have an almost right angle between the carapace and the telson. The carapace is clear. The carapace is wider than the telson (@fig-vig-euphasiacea-calyptopsis).
+
+```{r}
+#| label: "fig-vig-euphasiacea-calyptopsis"
+#| fig-cap: "Vignettes of the calyptopsis of Euphasiacea"
+plot_vignettes(vigns, group = "Euphausiacea_calyptopsis")
+```
+
+This group is similar to the `Calyptopsis` group in ZooScanNet (@fig-zsn-calyptopsis).
+
+::: {#fig-zsn-calyptopsis layout-ncol="2"}
+![](images/zooscannet/calyptopsis/12746501.jpg){width="100"}
+
+![](images/zooscannet/calyptopsis/12746702.jpg){width="100"}
+
+![](images/zooscannet/calyptopsis/12746863.jpg){width="100"}
+
+![](images/zooscannet/calyptopsis/12746863.jpg){width="100"}
+
+Images of Calyptopsis [@elineau2018].
+:::
+
+### Malacostraca_other
+
+### Amphipoda
+
+#### Senticaudata
+
+::: callout-warning
+## In progress
+
+This section is not yet complete
+:::
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Suborder of Senitcaudata includes the gammaridae. The head and the peraeon are continuous. The eyes are small.
+
+```{r}
+#| label: "fig-vig-senticaudata"
+#| fig-cap: "Vignettes of Senticaudata"
+plot_vignettes(vigns, group = "Senticaudata", nx = 2, ny =2)
+```
+
+This group is similar to the `Gammaridea` group in ZooScanNet (@fig-zsn-gammaridae).
+
+::: {#fig-zsn-gammaridae layout-ncol="2"}
+![](images/zooscannet/gammaridea/46733472.jpg){width="100"}
+
+![](images/zooscannet/gammaridea/48687332.jpg){width="100"}
+
+![](images/zooscannet/gammaridea/48834758.jpg){width="100"}
+
+![](images/zooscannet/gammaridea/48867702.jpg){width="100"}
+
+Images of Gammaridea [@elineau2018].
+:::
+
+#### Hyperiidea
+
+The hyperiidea are not a very present group. There are few images in the ZooScanNet [@elineau2018]. We find in the vignettes of Phronimidae, Platyscelidae or Oxycephalidae (@fig-vig-hyperiidea).
+
+```{r}
+#| label: "fig-vig-hyperiidea"
+#| fig-cap: "Vignettes of Hyperiidae"
+plot_vignettes(vigns, group = "Hyperiidae", nx = 3, ny =2)
+```
+
+This group is similar to the `Hyperiidea` group in ZooScanNet (@fig-zsn-hyperiidea).
+
+::: {#fig-zsn-hyperiidea layout-ncol="2"}
+![](images/zooscannet/hyperiidea/44936148.jpg){width="100"}
+
+![](images/zooscannet/hyperiidea/44938016.jpg){width="100"}
+
+![](images/zooscannet/hyperiidea/44978052.jpg){width="100"}
+
+![](images/zooscannet/hyperiidea/45038448.jpg){width="100"}
+
+Images of Hyperiidea [@elineau2018].
+:::
+
+### Isopoda
+
+::: callout-warning
+## In progress
+
+This section is not yet complete
+:::
+
+Very few organisms were found in previous studies [@dugauquier2019]. The main characteristics are ... (@fig-vig-isopoda).
+
+```{r}
+#| label: "fig-vig-isopoda"
+#| fig-cap: "Vignettes of Isopoda"
+plot_vignettes(vigns, group = "Isopoda", nx = 3, ny =2)
+```
+
+### Stomatopoda
+
+The Stomatopoda are known mainly because they contain the mantis shrimps, predators of fish, molluscs and other crustaceans [@ruppert2004]. Very few organisms were found in previous studies [@dugauquier2019].These organisms are easily identifiable.
+
+#### Stomatopoda_antizoea
+
+Antizoea have a long rostrum and two long spines . The eyes are darker on the vignette (@fig-vig-stomatopoda-antizoea). These organisms look like darts.
+
+```{r}
+#| label: "fig-vig-stomatopoda-antizoea"
+#| fig-cap: "Vignettes of the antizoea of Stomatopoda"
+plot_vignettes(vigns, group = "antizoea", nx = 3, ny =3)
+```
+
+#### Stomatopoda_pseudozoea
+
+The pseudozoa larva looks like a mantis (@fig-vig-stomatopoda-pseudozoea).
+
+```{r}
+#| label: "fig-vig-stomatopoda-pseudozoea"
+#| fig-cap: "Vignettes of the antizoea of Stomatopoda"
+plot_vignettes(vigns, group = "pseudozoea", nx = 3, ny =2)
+```
+
+## Ostracoda
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+This group is similar to the `Ostracoda` group in ZooScanNet (@fig-zsn-ostracoda).
+
+::: {#fig-zsn-ostracoda layout-ncol="2"}
+![](images/zooscannet/ostracoda/14431906.jpg){width="100"}
+
+![](images/zooscannet/ostracoda/14431918.jpg){width="100"}
+
+![](images/zooscannet/ostracoda/14431942.jpg){width="100"}
+
+![](images/zooscannet/ostracoda/14441258.jpg){width="100"}
+
+Images of Ostracoda [@elineau2018].
+:::
