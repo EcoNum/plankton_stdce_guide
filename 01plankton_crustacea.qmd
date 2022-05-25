@@ -1,19 +1,87 @@
 # Plankton_crustacea
 
-```{r}
+```{r, echo=FALSE}
 source("R/init.R")
 vigns <- fs::dir_ls(
   here::here(training_dir, "Plankton_crustacea"), 
   type = "file", glob = "*.png", recurse = TRUE)
 ```
 
-## Branchiopoda
+## Copepoda
 
-### Onychopoda
+Copepods are a very abundant class of crustacea within the planktonic organisms. For this reason they are separated from the other crustaceans. THe classification of copepoda is based on the morphology especially on the size of the antennule, the chepalosome et urosme (@fig-copepoda).
+
+![DExternal morphology of calanoid copepods: diagram of an adult female. A -- ventral view; B -- lateral view [@prusova2012].](images/01plankton_crustacea/copepoda.png){#fig-copepoda width="500"}
+
+The three orders differ in the following ways:
+
+-   Calanoids have antennules longer than the cephalosome and the urosome smaller than the prosome (\@fig-calanoida).
+
+![Vignette of Calanoida](images/01plankton_crustacea/calanoida.png){#fig-calanoida width="250"}
+
+-   Cyclopoida have antennules longer than the cephalosome and the urosome the same length as the prosome (@fig-cyclopoida).
+
+![Vignette of Cyclopoida.](images/01plankton_crustacea/cyclopoida.png){#fig-cyclopoida width="250"}
+
+-   Harpacticoida have antennules smaller than cephalosome and an inconspicuous division between the urosome and prosome
+
+![Vignette of Harpacticoida (Distioculus minor).](images/01plankton_crustacea/harpactioida.png){#fig-harpacticoida width="250"}
+
+### Gymnoplea
+
+#### Calanoida
+
+### Podoplea
+
+#### Cyclopoida
+
+::: callout-note
+## Unaccepted
+
+The poecilostomatoida is often cited in the literature. However, this order was first reclassified as the suborder Cyclopoida. Later this suborder was reclassified into the suborder Ergasilida [@khodami2020].
+:::
+
+##### Sapphirinidae
+
+The Sapphirinidae is a family of Ergasilida suborder ( @fig-sapphirinidae).
+
+![Image (A, @hecq2014) and vignette (B) of Sapphirinidae](images/01plankton_crustacea/sapphirinidae.png){#fig-sapphirinidae width="250"}
+
+@fig-vig-sapphirinidae shows several vignettes of Sapphirinidae.
+
+```{r}
+#| label: "fig-vig-sapphirinidae"
+#| fig-cap: "Vignettes of Sapphrinidae"
+plot_vignettes(vigns, group = "Sapphirinidae_other", nx = 3, ny =3)
+```
+
+This group is similar to the `Sapphrinidae` group in ZooScanNet (@fig-zsn-sapphrinidae).
+
+::: {#fig-zsn-sapphrinidae layout-ncol="2"}
+![](images/zooscannet/sapphirinidae/12748381.jpg){width="100"}
+
+![](images/zooscannet/sapphirinidae/14469908.jpg){width="100"}
+
+![](images/zooscannet/sapphirinidae/14469944.jpg){width="100"}
+
+![](images/zooscannet/sapphirinidae/15722979.jpg){width="100"}
+
+Images of Sapphrinidae [@elineau2018].
+:::
+
+#### Harpacticoida
+
+## Crustacea_other
+
+This group includes all crustacea except the copepods.
+
+### Branchiopoda
+
+#### Onychopoda
 
 Onychopoda is an order of branchiopoda.
 
-#### Evadne
+##### Evadne
 
 ::: callout-important
 ## New group
@@ -43,7 +111,7 @@ This group is similar to the `Evadne` group in ZooScanNet (@fig-zsn-evadne).
 Images of Evadne [@elineau2018]
 :::
 
-#### Podon
+##### Podon
 
 ::: callout-important
 ## New group
@@ -67,9 +135,9 @@ This group is similar to the `Podon` group in ZooScanNet (@fig-zsn-podon).
 Images of Podon [@elineau2018].
 :::
 
-### Ctenopoda {#sec-ctenopoda}
+#### Ctenopoda {#sec-ctenopoda}
 
-#### Penilia {#sec-penilia}
+##### Penilia {#sec-penilia}
 
 ::: callout-important
 ## New group
@@ -93,15 +161,128 @@ This group is similar to the `Penilia` group in ZooScanNet (@fig-zsn-penilia).
 Images of Penilia [@elineau2018].
 :::
 
-## Malacostraca
+### Malacostraca
 
-### Decapoda
+#### Decapoda
 
-### Euphausiacea
+##### Anomura_zoea
+
+The eyes are dark with a well-developed telson and a clear cephalothorax (@fig-vig-anomura-zoea1).
+
+```{r}
+#| label: "fig-vig-anomura-zoea1"
+#| fig-cap: "Vignettes of Anomura"
+vigns_porcellanidae <- fs::dir_ls(
+  here::here("images/01plankton_crustacea/decapoda_larva/anomura_zoea_larva/"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+plot_vignettes(vigns_porcellanidae , nx = 3, ny =3)
+```
+
+This group includes the `zoea__Galatheidae` group in ZooScanNet (@fig-zsn-zoea-galatheidae).
+
+::: {#fig-zsn-zoea-galatheidae layout-ncol="2"}
+![](images/zooscannet/zoea__galatheidae/14444028.jpg){width="100"}
+
+![](images/zooscannet/zoea__galatheidae/14892975.jpg){width="100"}
+
+![](images/zooscannet/zoea__galatheidae/24839218.jpg){width="100"}
+
+![](images/zooscannet/zoea__galatheidae/24839641.jpg){width="100"}
+
+Images of the zoea of Galatheidae [@elineau2018].
+:::
+
+Porcellanidae belongs to the anomura (@fig-vig-anomura-zoea2). They have a very long rostrum, a clear cephalothorax with two needles. In the previous study, the anomura included only this group.
+
+```{r}
+#| label: "fig-vig-anomura-zoea2"
+#| fig-cap: "Vignettes of Porcellanidae (Anomura)"
+plot_vignettes(vigns, group = "Anomura_zoea", nx = 3, ny =3)
+```
+
+##### Brachyura_zoea
+
+Brachyura are the true crabs with a short abdoman hidden under the cephalothorax [@ruppert2004]. They are a long rostrum and a long dorsal spine (@fig-vig-evadne).
+
+```{r}
+#| label: "fig-vig-brachyura-zoea"
+#| fig-cap: "Vignettes of Brachyura"
+plot_vignettes(vigns, group = "Brachyura_zoea", nx = 3, ny =3)
+```
+
+This group is similar to the `Brachyura` group in ZooScanNet (@fig-zsn-brachyura_zoea).
+
+::: {#fig-zsn-brachyura_zoea layout-ncol="2"}
+![](images/zooscannet/brachyura/14893078.jpg){width="100"}
+
+![](images/zooscannet/brachyura/994376.jpg){width="100"}
+
+![](images/zooscannet/brachyura/46879893.jpg){width="100"}
+
+![](images/zooscannet/brachyura/46902024.jpg){width="100"}
+
+Images of the zoea of Brachyura [@elineau2018].
+:::
+
+##### Decapoda_other_zoea
+
+::: callout-warning
+## In progress
+
+This section is not yet complete
+:::
+
+##### Decapoda_megalopa
+
+The cephalothorax is well developed while the abdomen is reduced (@fig-vig-decapoda-megalopa).
+
+```{r}
+#| label: "fig-vig-decapoda-megalopa"
+#| fig-cap: "Vignettes of the megalopa of Decapoda"
+plot_vignettes(vigns, group = "Decapoda_megalopa", nx = 4, ny =3)
+```
+
+This group is similar to the `Megalopa` group in ZooScanNet (@fig-zsn-decapoda-megalopa).
+
+::: {#fig-zsn-decapoda-megalopa layout-ncol="2"}
+![](images/zooscannet/decapoda_megalopa/12752002.jpg){width="100"}
+
+![](images/zooscannet/decapoda_megalopa/26480268.jpg){width="100"}
+
+![](images/zooscannet/decapoda_megalopa/26480663.jpg){width="100"}
+
+![](images/zooscannet/decapoda_megalopa/34840597.jpg){width="100"}
+
+Images of Megalopa [@elineau2018].
+:::
+
+##### Luciferidae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+This group is similar to the `Luciferidae` group in ZooScanNet (@fig-zsn-luciferidae).
+
+::: {#fig-zsn-luciferidae layout-ncol="2"}
+![](images/zooscannet/luciferidae/46852317.jpg){width="100"}
+
+![](images/zooscannet/luciferidae/46853328.jpg){width="100"}
+
+![](images/zooscannet/luciferidae/46856443.jpg){width="100"}
+
+![](images/zooscannet/luciferidae/46857327.jpg){width="100"}
+
+Images of Luciferidae [@elineau2018].
+:::
+
+#### Euphausiacea
 
 One of the well-known species of this order is the krill.
 
-#### Euphausiacea_calyptopsis
+##### Euphausiacea_calyptopsis
 
 Calyptopsis is one of the development stages of the euphausiacea. Calyptopis have an almost right angle between the carapace and the telson. The carapace is clear. The carapace is wider than the telson (@fig-vig-euphasiacea-calyptopsis).
 
@@ -125,11 +306,11 @@ This group is similar to the `Calyptopsis` group in ZooScanNet (@fig-zsn-calypto
 Images of Calyptopsis [@elineau2018].
 :::
 
-### Malacostraca_other
+#### Malacostraca_other
 
-### Amphipoda
+#### Amphipoda
 
-#### Senticaudata
+##### Senticaudata
 
 ::: callout-warning
 ## In progress
@@ -165,7 +346,7 @@ This group is similar to the `Gammaridea` group in ZooScanNet (@fig-zsn-gammarid
 Images of Gammaridea [@elineau2018].
 :::
 
-#### Hyperiidea
+##### Hyperiidea
 
 The hyperiidea are not a very present group. There are few images in the ZooScanNet [@elineau2018]. We find in the vignettes of Phronimidae, Platyscelidae or Oxycephalidae (@fig-vig-hyperiidea).
 
@@ -189,7 +370,7 @@ This group is similar to the `Hyperiidea` group in ZooScanNet (@fig-zsn-hyperiid
 Images of Hyperiidea [@elineau2018].
 :::
 
-### Isopoda
+#### Isopoda
 
 ::: callout-warning
 ## In progress
@@ -205,11 +386,11 @@ Very few organisms were found in previous studies [@dugauquier2019]. The main ch
 plot_vignettes(vigns, group = "Isopoda", nx = 3, ny =2)
 ```
 
-### Stomatopoda
+#### Stomatopoda
 
 The Stomatopoda are known mainly because they contain the mantis shrimps, predators of fish, molluscs and other crustaceans [@ruppert2004]. Very few organisms were found in previous studies [@dugauquier2019].These organisms are easily identifiable.
 
-#### Stomatopoda_antizoea
+##### Stomatopoda_antizoea
 
 Antizoea have a long rostrum and two long spines . The eyes are darker on the vignette (@fig-vig-stomatopoda-antizoea). These organisms look like darts.
 
@@ -219,7 +400,7 @@ Antizoea have a long rostrum and two long spines . The eyes are darker on the vi
 plot_vignettes(vigns, group = "antizoea", nx = 3, ny =3)
 ```
 
-#### Stomatopoda_pseudozoea
+##### Stomatopoda_pseudozoea
 
 The pseudozoa larva looks like a mantis (@fig-vig-stomatopoda-pseudozoea).
 
@@ -229,7 +410,7 @@ The pseudozoa larva looks like a mantis (@fig-vig-stomatopoda-pseudozoea).
 plot_vignettes(vigns, group = "pseudozoea", nx = 3, ny =2)
 ```
 
-## Ostracoda
+### Ostracoda
 
 ::: callout-important
 ## New group
