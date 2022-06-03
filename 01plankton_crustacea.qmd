@@ -11,7 +11,7 @@ vigns <- fs::dir_ls(
 
 Copepods are a very abundant class of crustacea within the planktonic organisms. For this reason they are separated from the other crustaceans. THe classification of copepoda is based on the morphology especially on the size of the antennule, the chepalosome et urosme (@fig-copepoda).
 
-![DExternal morphology of calanoid copepods: diagram of an adult female. A -- ventral view; B -- lateral view [@prusova2012].](images/01plankton_crustacea/copepoda.png){#fig-copepoda width="500"}
+![External morphology of calanoid copepods: diagram of an adult female. A -- ventral view; B -- lateral view [@prusova2012].](images/01plankton_crustacea/copepoda.png){#fig-copepoda width="500"}
 
 The three orders differ in the following ways:
 
@@ -31,6 +31,30 @@ The three orders differ in the following ways:
 
 #### Calanoida
 
+##### Eucalanidae
+
+These copepods are large. They have fairly large antennules. The urosome is short and can be distinguished from the prosome. The head is triangular and quite clear in the vignettes (@fig-vig-eucalanidae).
+
+```{r}
+#| label: "fig-vig-eucalanidae"
+#| fig-cap: "Vignettes of Eucalanidae"
+plot_vignettes(vigns, group = "Eucalanidae", nx = 2, ny =2)
+```
+
+This group is similar to the `Eucalanidae` group in ZooScanNet (@fig-zsn-eucalanidae).
+
+::: {#fig-zsn-eucalanidae layout-ncol="2"}
+![](images/zooscannet/eucalanidae/44718351.jpg){width="100"}
+
+![](images/zooscannet/eucalanidae/44718625.jpg){width="100"}
+
+![](images/zooscannet/eucalanidae/44718763.jpg){width="100"}
+
+![](images/zooscannet/eucalanidae/44719240.jpg){width="100"}
+
+Images of Eucalanidae [@elineau2018].
+:::
+
 ### Podoplea
 
 #### Cyclopoida
@@ -41,9 +65,137 @@ The three orders differ in the following ways:
 The poecilostomatoida is often cited in the literature. However, this order was first reclassified as the suborder Cyclopoida. Later this suborder was reclassified into the suborder Ergasilida [@khodami2020].
 :::
 
+##### Corycaeidae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+This small copepod is an ancient member of the Poecilostomatoidea. These organisms have a rectangular head with short antennae (@fig-vig-corycaeidae).
+
+```{r}
+#| label: "fig-vig-corycaeidae"
+#| fig-cap: "Vignettes of Corycaeidae"
+plot_vignettes(vigns, group = "Corycaeidae", nx = 3, ny =3)
+```
+
+This group is similar to the `Corycaeidae` group in ZooScanNet (@fig-zsn-corycaeidae).
+
+::: {#fig-zsn-corycaeidae layout-ncol="2"}
+![](images/zooscannet/corycaeidae/57130737.jpg){width="100"}
+
+![](images/zooscannet/corycaeidae/57131007.jpg){width="100"}
+
+![](images/zooscannet/corycaeidae/57131570.jpg){width="100"}
+
+![](images/zooscannet/corycaeidae/57746423.jpg){width="100"}
+
+Images of Corycaeidae [@elineau2018].
+:::
+
+##### Oithonidae
+
+Oithonidae is a good example of a cyclopoid with long antennules (much longer than the head) and a urosome of equivalent size to the prosome (@fig-vig-sapphirinidae).
+
+```{r}
+#| label: "fig-vig-oithonidae"
+#| fig-cap: "Vignettes of Oithonidae"
+plot_vignettes(vigns, group = "Oithonidae", nx = 4, ny =3)
+```
+
+This group is similar to the `Oithonidae` group in ZooScanNet (@fig-zsn-oithonidae).
+
+::: {#fig-zsn-oithonidae layout-ncol="2"}
+![](images/zooscannet/oithonidae/14434075.jpg){width="100"}
+
+![](images/zooscannet/oithonidae/14434233.jpg){width="100"}
+
+![](images/zooscannet/oithonidae/14434738.jpg){width="100"}
+
+![](images/zooscannet/oithonidae/14434743.jpg){width="100"}
+
+Images of Oithonidae [@elineau2018].
+:::
+
+##### Oncaeidae
+
+::: callout-warning
+## In progress
+
+This section is not yet complete
+:::
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+These copepods are small. This group does not fit the general description of cyclopoida. The distinction between the prosoma and the urosoma is well marked. This group used to be a member of the Poecilostomatoidea. Females may have an egg sac attached to the genital segment.
+
+@fig-vig-oncaeidae shows several vignettes of Oncaeidae.
+
+```{r}
+#| label: "fig-vig-oncaeidae"
+#| fig-cap: "Vignettes of the Oncaeidae"
+plot_vignettes(vigns, group = "Oncaeidae")
+```
+
+This group is similar to the `Oithonidae` group in ZooScanNet (@fig-zsn-oithonidae).
+
+::: {#fig-zsn-oncaeidae layout-ncol="2"}
+![](images/zooscannet/oncaeidae/14435614.jpg){width="100"}
+
+![](images/zooscannet/oncaeidae/14435617.jpg){width="100"}
+
+![](images/zooscannet/oncaeidae/48710816.jpg){width="100"}
+
+![](images/zooscannet/oncaeidae/48839739.jpg){width="100"}
+
+Images of Oncaeidae [@elineau2018].
+:::
+
 ##### Sapphirinidae
 
-The Sapphirinidae is a family of Ergasilida suborder ( @fig-sapphirinidae).
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+##### Copilia
+
+This small copepod is rather transparent with a rectangular head with a dark eye in the centre of the body (in the centre of the prosoma).
+
+These organisim mau be a Copelia (currently being checked)
+
+![](training_set/_train/_train_classif8/Plankton_crustacea/Copepoda/Podoplea/Cyclopoida/Sapphirinidae/Copilia/STDCE.2007-11-20.H1+C1_28.png){width="100"}
+
+This group is similar to the `Copilia` group in ZooScanNet (@fig-zsn-copilia).
+
+::: {#fig-zsn-copilia layout-ncol="2"}
+![](images/zooscannet/copilia/14436467.jpg){width="100"}
+
+![](images/zooscannet/copilia/14469913.jpg){width="100"}
+
+![](images/zooscannet/copilia/14937834.jpg){width="100"}
+
+![](images/zooscannet/copilia/38741801.jpg){width="100"}
+
+Images of Copilia [@elineau2018].
+:::
+
+##### Sapphirinidae_other
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Sapphirinidae is a family of Ergasilida suborder (@fig-sapphirinidae).
 
 ![Image (A, @hecq2014) and vignette (B) of Sapphirinidae](images/01plankton_crustacea/sapphirinidae.png){#fig-sapphirinidae width="250"}
 
@@ -70,6 +222,32 @@ Images of Sapphrinidae [@elineau2018].
 :::
 
 #### Harpacticoida
+
+The order of Harpactidoida is composed of several families which have very different forms. The previous study by @dugauquier2019 highlighted mainly the Euterpina
+
+```{r}
+#| label: "fig-vig-harpacticoida"
+#| fig-cap: "Vignettes of Euterpina (Harpacticoida)"
+plot_vignettes(vigns, group = "Harpacticoida", nx = 3, ny =3)
+```
+
+This group is similar to the `harpacticoida` group in ZooScanNet. This order is composed of several families such as Distioculus, Goniopsyllus (@fig-zsn-harpacticoida-goniopsyllus) or Euterpina (@fig-zsn-harpacticoida-euterpina).
+
+The Goniopsyllus family may remind one of the Sapphirina family. However, these organisms have a rostrum on the top of the head.
+
+::: {#fig-zsn-harpacticoida-goniopsyllus layout-ncol="2"}
+![](images/zooscannet/harpacticoida/goniopsyllus/34309061.jpg){width="100"} ![](images/zooscannet/harpacticoida/goniopsyllus/34314273.jpg){width="100"} ![](images/zooscannet/harpacticoida/goniopsyllus/34318374.jpg){width="100"} ![](images/zooscannet/harpacticoida/goniopsyllus/34314273.jpg){width="100"}
+
+Images of Goniopsyllus [@elineau2018].
+:::
+
+@fig-zsn-harpacticoida-euterpina shows several Euterpina family.
+
+::: {#fig-zsn-harpacticoida-euterpina layout-ncol="2"}
+![](images/zooscannet/harpacticoida/euterpina/34334329.jpg){width="100"} ![](images/zooscannet/harpacticoida/euterpina/34336407.jpg){width="100"} ![](images/zooscannet/harpacticoida/euterpina/34395159.jpg){width="100"} ![](images/zooscannet/harpacticoida/euterpina/34718687.jpg){width="100"}
+
+Images of Euterpina [@elineau2018].
+:::
 
 ## Crustacea_other
 
