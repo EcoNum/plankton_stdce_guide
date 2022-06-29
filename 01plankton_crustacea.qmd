@@ -31,6 +31,98 @@ The three orders differ in the following ways:
 
 #### Calanoida
 
+##### Acartiidae
+
+The Candaciidae have a rectangular head. the body is quite elongated (@fig-vig-acartiidae). The end of the prosoma is not pointed like the centropagidae and candaciidae.
+
+```{r}
+#| label: "fig-vig-acartiidae"
+#| fig-cap: "Vignettes of Acartiidae"
+plot_vignettes(vigns, group = "Acartiidae", nx = 3, ny =3)
+```
+
+This group is similar to the `Acartiidae` group in ZooScanNet (@fig-zsn-acartiidae).
+
+::: {#fig-zsn-acartiidae layout-ncol="2"}
+![](images/zooscannet/acartiidae/53088628.jpg){width="100"}
+
+![](images/zooscannet/acartiidae/53090553.jpg){width="100"}
+
+![](images/zooscannet/acartiidae/53098452.jpg){width="100"}
+
+![](images/zooscannet/acartiidae/53098644.jpg){width="100"}
+
+Images of Acartiidae [@elineau2018].
+:::
+
+##### Calanidae
+
+The Calanidae have an oval head. The body is quite elongated (@fig-vig-calanidae). the antennules are much longer than the prosoma and urosoma.
+
+```{r}
+#| label: "fig-vig-calanidae"
+#| fig-cap: "Vignettes of Calanidae"
+plot_vignettes(vigns, group = "Calanidae", nx = 3, ny =3)
+```
+
+This group is similar to the `Calanidae` group in ZooScanNet (@fig-zsn-calanidae).
+
+::: {#fig-zsn-candaciidae layout-ncol="2"}
+![](images/zooscannet/calanidae/1158540.jpg){width="100"}
+
+![](images/zooscannet/calanidae/12746593.jpg){width="100"}
+
+![](images/zooscannet/calanidae/12747051.jpg){width="100"}
+
+![](images/zooscannet/calanidae/996106.jpg){width="100"}
+
+Images of Calanidae [@elineau2018].
+:::
+
+##### Candaciidae
+
+The Candaciidae have a rectangular head and marked shoulders (@fig-vig-candaciidae). Some species have dense legs on the vignette.This group is quite similar to the Centropagidae.
+
+![Vignette of Candaciidae](training_set/_train/_train_classif8/Plankton_crustacea/Copepoda/Gymnoplea/Calanoida/Candaciidae/STDCE.2005-10-18.H1+A1_142.png){#fig-vig-candaciidae width="308"}
+
+This group is similar to the `Candaciidae` group in ZooScanNet (@fig-zsn-candaciidae).
+
+::: {#fig-zsn-candaciidae layout-ncol="2"}
+![](images/zooscannet/candaciidae/1158649.jpg){width="100"}
+
+![](images/zooscannet/candaciidae/1158681.jpg){width="100"}
+
+![](images/zooscannet/candaciidae/14468577.jpg){width="100"}
+
+![](images/zooscannet/candaciidae/995956.jpg){width="100"}
+
+Images of Candaciidae [@elineau2018].
+:::
+
+##### Centropagidae
+
+the Centropagidae have a rectangular head and marked shoulders (@fig-vig-centropagidae). This group is quite similar to the Candacidae.
+
+```{r}
+#| label: "fig-vig-centropagidae"
+#| fig-cap: "Vignettes of Centropagidae"
+plot_vignettes(vigns, group = "Centropagidae", nx = 3, ny =3)
+```
+
+This group is similar to the `Centropagidae` group in ZooScanNet (@fig-zsn-centropagidae).
+
+::: {#fig-zsn-centropagidae layout-ncol="2"}
+![](images/zooscannet/centropagidae/34318748.jpg){width="100"}
+
+![](images/zooscannet/centropagidae/34922437.jpg){width="100"}
+
+![](images/zooscannet/centropagidae/48745423.jpg){width="100"}
+
+![](images/zooscannet/centropagidae/48745590.jpg){width="100"}
+
+Images of Centropagidae [@elineau2018].
+:::
+
 ##### Eucalanidae
 
 These copepods are large. They have fairly large antennules. The urosome is short and can be distinguished from the prosome. The head is triangular and quite clear in the vignettes (@fig-vig-eucalanidae).
