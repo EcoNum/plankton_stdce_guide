@@ -55,6 +55,54 @@ This group is similar to the `Acartiidae` group in ZooScanNet (@fig-zsn-acartiid
 Images of Acartiidae [@elineau2018].
 :::
 
+##### Aetideidae
+
+###### Euchirella
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Euchirella is a genus of Aetideidae. This group is similar to the `Euchirella` group in ZooScanNet (@fig-zsn-euchirella).
+
+::: {#fig-zsn-euchirella layout-ncol="2"}
+![](images/zooscannet/euchirella/46851335.jpg){width="100"}
+
+![](images/zooscannet/euchirella/46854678.jpg){width="100"}
+
+![](images/zooscannet/euchirella/46857095.jpg){width="100"}
+
+![](images/zooscannet/euchirella/46857112.jpg){width="100"}
+
+Images of Euchirella [@elineau2018].
+:::
+
+##### Augaptilidae
+
+###### Haloptilus
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+Haloptilus is a genus of Augaptilidae. This group is similar to the `Haloptilus` group in ZooScanNet (@fig-zsn-haloptilus).
+
+::: {#fig-zsn-haloptilus layout-ncol="2"}
+![](images/zooscannet/haloptilus/44719371.jpg){width="100"}
+
+![](images/zooscannet/haloptilus/44719400.jpg){width="100"}
+
+![](images/zooscannet/haloptilus/44719445.jpg){width="100"}
+
+![](images/zooscannet/haloptilus/44719700.jpg){width="100"}
+
+Images of Haloptilus [@elineau2018].
+:::
+
 ##### Calanidae
 
 The Calanidae have an oval head. The body is quite elongated (@fig-vig-calanidae). the antennules are much longer than the prosoma and urosoma.
@@ -67,7 +115,7 @@ plot_vignettes(vigns, group = "Calanidae", nx = 3, ny =3)
 
 This group is similar to the `Calanidae` group in ZooScanNet (@fig-zsn-calanidae).
 
-::: {#fig-zsn-candaciidae layout-ncol="2"}
+::: {#fig-zsn-calanidae layout-ncol="2"}
 ![](images/zooscannet/calanidae/1158540.jpg){width="100"}
 
 ![](images/zooscannet/calanidae/12746593.jpg){width="100"}
@@ -77,6 +125,16 @@ This group is similar to the `Calanidae` group in ZooScanNet (@fig-zsn-calanidae
 ![](images/zooscannet/calanidae/996106.jpg){width="100"}
 
 Images of Calanidae [@elineau2018].
+:::
+
+##### Calocalanus
+
+###### Calocalanus_pavo
+
+::: callout-warning
+## In progress
+
+This section is not yet complete
 :::
 
 ##### Candaciidae
@@ -145,6 +203,92 @@ This group is similar to the `Eucalanidae` group in ZooScanNet (@fig-zsn-eucalan
 ![](images/zooscannet/eucalanidae/44719240.jpg){width="100"}
 
 Images of Eucalanidae [@elineau2018].
+:::
+
+##### Euchaetidae
+
+::: callout-warning
+## In progress
+
+This section is not yet complete
+:::
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+##### Pontellidae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Pontellidae have a triangular head with cephalic hook.
+
+This group is similar to the `Pontellidae` group in ZooScanNet (@fig-zsn-pontellidae).
+
+::: {#fig-zsn-pontellidae layout-ncol="2"}
+![](images/zooscannet/pontellidae/48021054.jpg){width="100"}
+
+![](images/zooscannet/pontellidae/48021093.jpg){width="100"}
+
+![](images/zooscannet/pontellidae/48022991.jpg){width="100"}
+
+![](images/zooscannet/pontellidae/48072704.jpg){width="100"}
+
+Images of Pontellidae [@elineau2018].
+:::
+
+##### Rhincalanidae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Rhincalanidae have a triangular rostrum. The rostrum can also be arrow-shaped
+
+This group is similar to the `Rhincalanidae` group in ZooScanNet (@fig-zsn-rhincalanidae).
+
+::: {#fig-zsn-rhincalanidae layout-ncol="2"}
+![](images/zooscannet/rhincalanidae/44718953.jpg){width="100"}
+
+![](images/zooscannet/rhincalanidae/44739332.jpg){width="100"}
+
+![](images/zooscannet/rhincalanidae/44748309.jpg){width="100"}
+
+![](images/zooscannet/rhincalanidae/44814247.jpg){width="100"}
+
+Images of Rhincalanidae [@elineau2018].
+:::
+
+##### Temoridae
+
+::: callout-important
+## New group
+
+In previous studies (and associated training sets), this group was not studied.
+:::
+
+The Temoridae have a head larger than the thorax.
+
+This group is similar to the `Temoridae` group in ZooScanNet (@fig-zsn-temoridae).
+
+::: {#fig-zsn-temoridae layout-ncol="2"}
+![](images/zooscannet/temoridae/12746771.jpg){width="100"}
+
+![](images/zooscannet/temoridae/12749486.jpg){width="100"}
+
+![](images/zooscannet/temoridae/12750233.jpg){width="100"}
+
+![](images/zooscannet/temoridae/13625841.jpg){width="100"}
+
+Images of Temoridae [@elineau2018].
 :::
 
 ### Podoplea
