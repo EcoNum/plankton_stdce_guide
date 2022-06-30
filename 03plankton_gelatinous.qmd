@@ -135,7 +135,7 @@ The trunk of these organisims is elongated. The trunk is less dense and compact 
 plot_vignettes(vigns, group = "Fritillariidae")
 ```
 
-#### Appendicularia_tail
+#### Appendicularia_tail {#sec-appendicularia-tail}
 
 The organism is often damaged during the haul. As a result, appendicular tails are found in the samples (@fig-appendicularia-tail). There is a light band arround two dark bands [@gorsky2017].
 
@@ -197,7 +197,7 @@ Ce groupe est similaire au groupe `chaetognatha` dans le ZooScanNet ( @fig-zsn-c
 Images de Chaetognatha du ZooScanNet [@elineau2018].
 :::
 
-### Chaetognatha_head
+### Chaetognatha_head {#sec-chaetognatha-head}
 
 ::: callout-important
 ## Nouveau groupe
@@ -219,7 +219,7 @@ Lors de l'échantillonnage, ces organismes peuvent être divisé en fragments. L
 Images de tête de Chaetognatha du ZooScanNet [@elineau2018].
 :::
 
-### Chaetognatha_tail
+### Chaetognatha_tail {#sec-chaetognatha-tail}
 
 ::: callout-important
 ## Nouveau groupe

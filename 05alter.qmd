@@ -1,1 +1,44 @@
 # alter
+
+```{r, echo=FALSE}
+source("R/init.R")
+vigns <- fs::dir_ls(
+  here::here(training_dir, "alter"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+This group includes all vignettes that are not classified and considered as errors (bad focus, fibers, bubbles, multiples,...).
+
+## artefact
+
+### bad_threshold
+
+#### part
+
+With the exception of the groups `Appendicularia_tail` (@sec-appendicularia-tail), `Chaetognatha_head` (@sec-chaetognatha-head) and `Chaetognaha_tail` (@sec-chaetognatha-tail), vignettes containing parts of individuals are classified in these groups `Copepoda_part`, `Actinopterygii_scale` and `part_other`.
+
+```{r}
+#| label: "fig-vig-copepoda-part"
+#| fig-cap: "Vignettes of Copepoda part"
+plot_vignettes(vigns, group = "Copepoda_part", nx = 3, ny =3)
+```
+
+#### multiple
+
+By convention, each vignette represents a single individual. If more than one individual is on a vignette, the vignette is excluded from the `multiple_other` (@fig-vig-multiple-other) or `Copepoda_multiple` (@fig-vig-copepoda-multiple) groups.
+
+```{r}
+#| label: "fig-vig-multiple-other"
+#| fig-cap: "Vignettes of multiple individuals"
+plot_vignettes(vigns, group = "multiple_other", nx = 3, ny =3)
+```
+
+```{r}
+#| label: "fig-vig-copepoda-multiple"
+#| fig-cap: "Vignettes of multiple copepods"
+plot_vignettes(vigns, group = "Copepoda_multiple", nx = 3, ny =3)
+```
+
+These groups are similar to the `multiple_Copepoda` and `multiple_other` groups in ZooScanNet.
+
+## alter_other

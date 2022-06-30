@@ -11,6 +11,69 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -54,7 +117,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body class="floating fullcontent">
+<body class="floating">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -129,15 +192,82 @@
     </div>
 </nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">Table of contents</h2>
+<ul>
+<li><a href="#artefact" id="toc-artefact" class="nav-link active" data-scroll-target="#artefact"> <span class="header-section-number">6.1</span> artefact</a>
+<ul class="collapse">
+<li><a href="#bad_threshold" id="toc-bad_threshold" class="nav-link" data-scroll-target="#bad_threshold"> <span class="header-section-number">6.1.1</span> bad_threshold</a></li>
+</ul></li>
+<li><a href="#alter_other" id="toc-alter_other" class="nav-link" data-scroll-target="#alter_other"> <span class="header-section-number">6.2</span> alter_other</a></li>
+</ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header" class="quarto-title-block default">
 
 <div class="quarto-title"><h1 class="title d-none d-lg-block display-7"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">alter</span></h1></div></header>
 
+<div class="cell">
+
+</div>
+<p>This group includes all vignettes that are not classified and considered as errors (bad focus, fibers, bubbles, multiples,…).</p>
+<section id="artefact" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="artefact"><span class="header-section-number">6.1</span> artefact</h2>
+<section id="bad_threshold" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="bad_threshold"><span class="header-section-number">6.1.1</span> bad_threshold</h3>
+<section id="part" class="level4" data-number="6.1.1.1">
+<h4 data-number="6.1.1.1" class="anchored" data-anchor-id="part"><span class="header-section-number">6.1.1.1</span> part</h4>
+<p>With the exception of the groups <code>Appendicularia_tail</code> (<a href="03plankton_gelatinous.html#sec-appendicularia-tail">Section&nbsp;<span>4.1.2.2</span></a>), <code>Chaetognatha_head</code> (<a href="03plankton_gelatinous.html#sec-chaetognatha-head">Section&nbsp;<span>4.2.2</span></a>) and <code>Chaetognaha_tail</code> (<a href="03plankton_gelatinous.html#sec-chaetognatha-tail">Section&nbsp;<span>4.2.3</span></a>), vignettes containing parts of individuals are classified in these groups <code>Copepoda_part</code>, <code>Actinopterygii_scale</code> and <code>part_other</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Copepoda_part"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-copepoda-part" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="05alter_files/figure-html/fig-vig-copepoda-part-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 6.1: Vignettes of Copepoda part</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="multiple" class="level4" data-number="6.1.1.2">
+<h4 data-number="6.1.1.2" class="anchored" data-anchor-id="multiple"><span class="header-section-number">6.1.1.2</span> multiple</h4>
+<p>By convention, each vignette represents a single individual. If more than one individual is on a vignette, the vignette is excluded from the <code>multiple_other</code> (<a href="#fig-vig-multiple-other">Figure&nbsp;<span>6.2</span></a>) or <code>Copepoda_multiple</code> (<a href="#fig-vig-copepoda-multiple">Figure&nbsp;<span>6.3</span></a>) groups.</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"multiple_other"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-multiple-other" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="05alter_files/figure-html/fig-vig-multiple-other-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 6.2: Vignettes of multiple individuals</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Copepoda_multiple"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-copepoda-multiple" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="05alter_files/figure-html/fig-vig-copepoda-multiple-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 6.3: Vignettes of multiple copepods</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These groups are similar to the <code>multiple_Copepoda</code> and <code>multiple_other</code> groups in ZooScanNet.</p>
+</section>
+</section>
+</section>
+<section id="alter_other" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="alter_other"><span class="header-section-number">6.2</span> alter_other</h2>
 
 
+
+</section>
 </main> <!-- /main -->
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
