@@ -1,10 +1,10 @@
-# Introduction
+# Classification
 
 ```{r, message=FALSE, warning=FALSE}
 plkt <- data.io::read(here::here("data", "mesoplankton.csv"))
 ```
 
-The classification is broken down into 6 levels:
+This guide uses a classification divided into 6 levels
 
 -   N1 : quick and convenient separation into `r length(unique(plkt$N1))` groups. The groups are as follows: `r unique(plkt$N1)` .
 
@@ -23,3 +23,7 @@ The tree structure of the different groups can be viewed below. A mindmap view i
 ```{r}
 fs::dir_tree("training_set/", type = "directory")
 ```
+
+Planktonic organisms are available in the form of vignettes. It is therefore only possible to classify individuals on the basis of morphological criteria.
+
+The first level of classification in this guide corresponds more or less to level 1 or 2 of this classification. The second level of classification corresponds mainly to level 3 of the tree presented above. The third level corresponds to the most detailed classification.

@@ -1,0 +1,17 @@
+# Analysis of Numerical Plankton Images
+
+## Zooplankton sampling
+
+Zooplankton sampling is carried out using plankton net hauls....
+
+## Image analysis
+
+The collected organisms are then analysed by image analysis....
+
+The resulting images named vignettes of each particle are studied.
+
+....
+
+## Training set
+
+This guide allows you to develop a training set using all the vignettes obtained.

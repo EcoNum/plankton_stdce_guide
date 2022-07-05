@@ -8,4 +8,6 @@ This guide follows two previous guides in French:
 
 -   [Guide d'identification du mesozooplancton en Mer Ligurienne : version 2](https://econum.github.io/zooimage_mesozooplankton_guide2)
 
+This guide is divided into three parts corresponding to three levels of precision. The first level includes ... groups that anyone can classify. The second level includes ... groups that require biological knowledge of the morphology of planktonic organisms. The last level is the most precise and requires a detailed knowledge of the morphology of planktonic organisms
+
 This book is a Quarto book. To learn more about Quarto books visit <https://quarto.org/docs/books>.

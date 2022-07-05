@@ -1,0 +1,61 @@
+# Level 2 : advanced classification
+
+```{r,echo=FALSE}
+source("R/init.R")
+```
+
+This advanced classification is based on the general level 3 classification proposed in this guide. Some knowledge of biology is required to effectively classify vignettes into the ... groups proposed.
+
+## Plankton_crustacea
+
+```{r}
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_crustacea"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+Within the plankton_crustacea group, it is possible to differentiate between gymnoplea, podoplea, Brachiopoda, malacostrace and ostracoda.
+
+### Gymnoplea
+
+Gymnoplea are copepods, which are a well-studied class of crustaceans. These copepods have antennules longer than the cephalosome and the urosome smaller than the prosoma. The calanoida below shows these morphological features (@fig-gymnoplea).
+
+![Vignette of gymnoplea (Calanoida)](images/01plankton_crustacea/calanoida.png){#fig-gymnoplea width="250"}
+
+@fig-vig-gymnoplea shows a set of individuals in this group.
+
+```{r}
+#| label: "fig-vig-gymnoplea"
+#| fig-cap: "Vignettes of Gymnoplea"
+plot_vignettes(vigns, group = "Gymnoplea", nx = 5, ny = 5)
+```
+
+More details on this suborder of copepods can be found in the @sec-gymnoplea.
+
+### Podoplea
+
+Podoplea is composed by the order of cyclopoida and the order of Harpacticoida. These organisms have a great morphological diversity. The antennules are not longer than the prosome and urosome. The urosome is as long as the prosome or not clearly distinguished from the prosome
+
+```{r}
+#| label: "fig-vig-podoplea"
+#| fig-cap: "Vignettes of Podoplea"
+plot_vignettes(vigns, group = "Podoplea", nx = 5, ny = 5)
+```
+
+More details on this suborder of copepods can be found in the @sec-podoplea.
+
+### Brachiopoda
+
+```{r}
+#| label: "fig-vig-brachiopoda"
+#| fig-cap: "Vignettes of Brachiopoda"
+plot_vignettes(vigns, group = "Branchiopoda", nx = 4, ny = 3)
+```
+
+### Malacostraca
+
+```{r}
+#| label: "fig-vig-malacostraca"
+#| fig-cap: "Vignettes of malacostraca"
+plot_vignettes(vigns, group = "Malacostraca", nx = 5, ny = 5)
+```

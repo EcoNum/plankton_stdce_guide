@@ -9,7 +9,7 @@ vigns <- fs::dir_ls(
 
 ## Copepoda
 
-Copepods are a very abundant class of crustacea within the planktonic organisms. For this reason they are separated from the other crustaceans. THe classification of copepoda is based on the morphology especially on the size of the antennule, the chepalosome et urosme (@fig-copepoda).
+Copepods are a very abundant class of crustacea within the planktonic organisms. For this reason they are separated from the other crustaceans. The classification of copepoda is based on the morphology especially on the size of the antennule, the chepalosome et urosme (@fig-copepoda).
 
 ![External morphology of calanoid copepods: diagram of an adult female. A -- ventral view; B -- lateral view [@prusova2012].](images/01plankton_crustacea/copepoda.png){#fig-copepoda width="500"}
 
@@ -27,7 +27,7 @@ The three orders differ in the following ways:
 
 ![Vignette of Harpacticoida (Distioculus minor).](images/01plankton_crustacea/harpactioida.png){#fig-harpacticoida width="250"}
 
-### Gymnoplea
+### Gymnoplea {#sec-gymnoplea}
 
 #### Calanoida
 
@@ -291,7 +291,7 @@ This group is similar to the `Temoridae` group in ZooScanNet (@fig-zsn-temoridae
 Images of Temoridae [@elineau2018].
 :::
 
-### Podoplea
+### Podoplea {#sec-podoplea}
 
 #### Cyclopoida
 

@@ -18,12 +18,17 @@ book:
   date: now
   chapters:
     - index.qmd
-    - intro.qmd
-    - "01plankton_crustacea.qmd"
-    - "02plankton_dark.qmd"
-    - "03plankton_gelatinous.qmd"
-    - "04plankton_small.qmd"
-    - "05alter.qmd"
+    - zooplankton_sampling.qmd
+    - classification.qmd
+    - n1.qmd
+    - n2.qmd
+    - part: n3.qmd
+      chapters:
+        - "01plankton_crustacea.qmd"
+        - "02plankton_dark.qmd"
+        - "03plankton_gelatinous.qmd"
+        - "04plankton_small.qmd"
+        - "05alter.qmd"
     - references.qmd
 
 bibliography: references.bib

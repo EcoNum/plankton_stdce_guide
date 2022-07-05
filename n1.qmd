@@ -1,0 +1,4 @@
+# Level 1 : easy classification
+
+This first classification is simple. It does not require any particular knowledge of the morphology of planktonic organisms. It is possible to count ... groups that do not necessarily correspond to a biological classification.
+
