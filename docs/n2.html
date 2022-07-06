@@ -234,6 +234,13 @@
 <li><a href="#annelida" id="toc-annelida" class="nav-link" data-scroll-target="#annelida"> <span class="header-section-number">4.2.2</span> Annelida</a></li>
 <li><a href="#actinopterygii-fish-larvae" id="toc-actinopterygii-fish-larvae" class="nav-link" data-scroll-target="#actinopterygii-fish-larvae"> <span class="header-section-number">4.2.3</span> Actinopterygii (fish larvae)</a></li>
 </ul></li>
+<li><a href="#plankton_gelatinous" id="toc-plankton_gelatinous" class="nav-link" data-scroll-target="#plankton_gelatinous"> <span class="header-section-number">4.3</span> Plankton_gelatinous</a>
+<ul class="collapse">
+<li><a href="#thaliacea" id="toc-thaliacea" class="nav-link" data-scroll-target="#thaliacea"> <span class="header-section-number">4.3.1</span> Thaliacea</a></li>
+<li><a href="#appendicularia" id="toc-appendicularia" class="nav-link" data-scroll-target="#appendicularia"> <span class="header-section-number">4.3.2</span> Appendicularia</a></li>
+<li><a href="#chaetognatha" id="toc-chaetognatha" class="nav-link" data-scroll-target="#chaetognatha"> <span class="header-section-number">4.3.3</span> Chaetognatha</a></li>
+<li><a href="#cnidaria" id="toc-cnidaria" class="nav-link" data-scroll-target="#cnidaria"> <span class="header-section-number">4.3.4</span> Cnidaria</a></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -378,6 +385,89 @@
 <figure class="figure">
 <p><img src="n2_files/figure-html/fig-vig-actinopterygii-1.png" class="img-fluid figure-img" width="672"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.8: Vignettes of Actinopterygii</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="plankton_gelatinous" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="plankton_gelatinous"><span class="header-section-number">4.3</span> Plankton_gelatinous</h2>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>vigns <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(training_dir, <span class="st">"Plankton_gelatinous"</span>), </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"file"</span>, <span class="at">glob =</span> <span class="st">"*.png"</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="thaliacea" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="thaliacea"><span class="header-section-number">4.3.1</span> Thaliacea</h3>
+<p><a href="#fig-vig-thaliacea">Figure&nbsp;<span>4.9</span></a></p>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Thaliacea"</span>, <span class="at">nx =</span> <span class="dv">4</span>, <span class="at">ny =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-thaliacea" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-thaliacea-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.9: Vignettes of Thaliacea</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="appendicularia" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="appendicularia"><span class="header-section-number">4.3.2</span> Appendicularia</h3>
+<p><a href="#fig-vig-appendicularia">Figure&nbsp;<span>4.10</span></a></p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Appendicularia"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-appendicularia" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-appendicularia-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.10: Vignettes of Appendicularia</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="chaetognatha" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="chaetognatha"><span class="header-section-number">4.3.3</span> Chaetognatha</h3>
+<p><a href="#fig-vig-chaetognatha">Figure&nbsp;<span>4.11</span></a></p>
+<div class="cell">
+<div class="sourceCode" id="cb13"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Chaetognatha"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-chaetognatha" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-chaetognatha-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.11: Vignettes of Chaetognatha</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cnidaria" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="cnidaria"><span class="header-section-number">4.3.4</span> Cnidaria</h3>
+<p>Cnidarians include corals, anemones and medusas. Only individuals living in the water body are considered in this study. Gelatinous organisms are lightly coloured in the vignettes. These are mainly jellyfish ( <a href="#fig-vig-cnidaria">Figure&nbsp;<span>4.12</span></a> ).</p>
+<div class="cell">
+<div class="sourceCode" id="cb14"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flow)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>vigns <span class="sc">%&gt;.%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  stringr<span class="sc">::</span><span class="fu">str_subset</span>(., <span class="st">"Siphonophorae"</span>, <span class="at">negate =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;.%</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_vignettes</span>(., <span class="at">group =</span> <span class="st">"Cnidaria"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-cnidaria" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-cnidaria-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.12: Vignettes of Cnidaria</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-vig-siphonophorae">Figure&nbsp;<span>4.13</span></a></p>
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Siphonophorae"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-siphonophorae" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-siphonophorae-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.13: Vignettes of Siphonophorae</figcaption><p></p>
 </figure>
 </div>
 </div>

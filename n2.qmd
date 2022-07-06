@@ -112,3 +112,62 @@ This group includes fish larvae. These vertebrates are easily identifiable. This
 plot_vignettes(vigns, group = "Actinopterygii", nx = 4, ny = 5
 )
 ```
+
+## Plankton_gelatinous
+
+```{r}
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_gelatinous"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+### Thaliacea
+
+@fig-vig-thaliacea
+
+```{r}
+#| label: "fig-vig-thaliacea"
+#| fig-cap: "Vignettes of Thaliacea"
+plot_vignettes(vigns, group = "Thaliacea", nx = 4, ny = 4)
+```
+
+### Appendicularia
+
+@fig-vig-appendicularia
+
+```{r}
+#| label: "fig-vig-appendicularia"
+#| fig-cap: "Vignettes of Appendicularia"
+plot_vignettes(vigns, group = "Appendicularia", nx = 5, ny = 5)
+```
+
+### Chaetognatha
+
+@fig-vig-chaetognatha
+
+```{r}
+#| label: "fig-vig-chaetognatha"
+#| fig-cap: "Vignettes of Chaetognatha"
+plot_vignettes(vigns, group = "Chaetognatha", nx = 3, ny = 3)
+```
+
+### Cnidaria
+
+Cnidarians include corals, anemones and medusas. Only individuals living in the water body are considered in this study. Gelatinous organisms are lightly coloured in the vignettes. These are mainly jellyfish ( @fig-vig-cnidaria ).
+
+```{r}
+#| label: "fig-vig-cnidaria"
+#| fig-cap: "Vignettes of Cnidaria"
+library(flow)
+vigns %>.%
+  stringr::str_subset(., "Siphonophorae", negate = TRUE) %>.%
+  plot_vignettes(., group = "Cnidaria", nx = 5, ny = 5)
+```
+
+@fig-vig-siphonophorae
+
+```{r}
+#| label: "fig-vig-siphonophorae"
+#| fig-cap: "Vignettes of Siphonophorae"
+plot_vignettes(vigns, group = "Siphonophorae", nx = 5, ny = 5)
+```
