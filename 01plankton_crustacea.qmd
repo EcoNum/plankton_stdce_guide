@@ -495,7 +495,7 @@ This group includes all crustacea except the copepods.
 
 Onychopoda is an order of branchiopoda.
 
-##### Evadne
+##### Evadne {#sec-evadne}
 
 ::: callout-important
 ## New group
@@ -525,7 +525,7 @@ This group is similar to the `Evadne` group in ZooScanNet (@fig-zsn-evadne).
 Images of Evadne [@elineau2018]
 :::
 
-##### Podon
+##### Podon {#sec-podon}
 
 ::: callout-important
 ## New group
@@ -575,7 +575,7 @@ This group is similar to the `Penilia` group in ZooScanNet (@fig-zsn-penilia).
 Images of Penilia [@elineau2018].
 :::
 
-### Malacostraca
+### Malacostraca {#sec-malacostraca}
 
 #### Decapoda
 

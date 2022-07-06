@@ -14,7 +14,9 @@ vigns <- fs::dir_ls(
   type = "file", glob = "*.png", recurse = TRUE)
 ```
 
-Within the plankton_crustacea group, it is possible to differentiate between gymnoplea, podoplea, Brachiopoda, malacostrace and ostracoda.
+The group plankton_crustacea includes the crustaceans. Typical organisms in this group are copepods, krill, crabs, shrimps, gammarids
+
+Within the plankton_crustacea group, it is possible to differentiate between gymnoplea, podoplea, branchiopoda and malacostraca.
 
 ### Gymnoplea
 
@@ -34,7 +36,7 @@ More details on this suborder of copepods can be found in the @sec-gymnoplea.
 
 ### Podoplea
 
-Podoplea is composed by the order of cyclopoida and the order of Harpacticoida. These organisms have a great morphological diversity. The antennules are not longer than the prosome and urosome. The urosome is as long as the prosome or not clearly distinguished from the prosome
+Podoplea is composed by the order of cyclopoida and the order of Harpacticoida. These organisms have a great morphological diversity. The antennules are not longer than the prosome and urosome. The urosome is as long as the prosome or not clearly distinguished from the prosome. A copepod that does not look like a gymnoplea belongs to the podoplea.
 
 ```{r}
 #| label: "fig-vig-podoplea"
@@ -44,18 +46,69 @@ plot_vignettes(vigns, group = "Podoplea", nx = 5, ny = 5)
 
 More details on this suborder of copepods can be found in the @sec-podoplea.
 
-### Brachiopoda
+### Branchiopoda
+
+Among the branchiopoda are the Evadne (@sec-evadne) and podon (@sec-podon). These small crustaceans have a very clear shells on the vignettes
 
 ```{r}
-#| label: "fig-vig-brachiopoda"
-#| fig-cap: "Vignettes of Brachiopoda"
+#| label: "fig-vig-branchiopoda"
+#| fig-cap: "Vignettes of Branchiopoda"
 plot_vignettes(vigns, group = "Branchiopoda", nx = 4, ny = 3)
 ```
 
 ### Malacostraca
 
+Among the malacostraca are the decapods (crabs, lobsters, shrimps,...), the euphausiids (krill), the amphipods (gammarids), the isopods and the stomatopods (the mantis shrimps). This group of crustaceans corresponds to the main idea that novices have of crustaceans (@fig-vig-malacostraca).
+
 ```{r}
 #| label: "fig-vig-malacostraca"
 #| fig-cap: "Vignettes of malacostraca"
 plot_vignettes(vigns, group = "Malacostraca", nx = 5, ny = 5)
+```
+
+More details on class of Malacostraca can be found in the @sec-malacostraca.
+
+## Plankton_dark
+
+The plankton_dark group includes darkened organisms in the vignettes. This group consists of molluscs (bivalves and gastropods), annelids and actinopterygians (fish larvae).
+
+```{r}
+vigns <- fs::dir_ls(
+  here::here(training_dir, "Plankton_dark"), 
+  type = "file", glob = "*.png", recurse = TRUE)
+```
+
+### Mollusca
+
+This group includes the bivalvia and gastropoda. All the organisms studied have shells ( @fig-vig-mollusca ).
+
+Cavoliniidae and creseis are easily recognisable individuals among molluscs
+
+```{r}
+#| label: "fig-vig-mollusca"
+#| fig-cap: "Vignettes of Mollusca"
+plot_vignettes(vigns, group = "Mollusca", nx = 4, ny = 4)
+```
+
+More details on this phylum of mollusca can be found in the @sec-mollusca.
+
+### Annelida
+
+This group includes worms. Annelida are vermiform and metamerised body in several segments along a longitudinal axis ( @fig-vig-annelida ). Polychaetes are mainly found in the marine environment
+
+```{r}
+#| label: "fig-vig-annelida"
+#| fig-cap: "Vignettes of Annelida"
+plot_vignettes(vigns, group = "Annelida", nx = 3, ny = 3)
+```
+
+### Actinopterygii (fish larvae)
+
+This group includes fish larvae. These vertebrates are easily identifiable. This group includes fish larvae. These vertebrates are easily identifiable. The most detailed level of the proposed classification allows differentiation between the different developmental stages of the organisms.
+
+```{r}
+#| label: "fig-vig-actinopterygii"
+#| fig-cap: "Vignettes of Actinopterygii"
+plot_vignettes(vigns, group = "Actinopterygii", nx = 4, ny = 5
+)
 ```

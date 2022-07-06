@@ -225,8 +225,14 @@
 <ul class="collapse">
 <li><a href="#gymnoplea" id="toc-gymnoplea" class="nav-link" data-scroll-target="#gymnoplea"> <span class="header-section-number">4.1.1</span> Gymnoplea</a></li>
 <li><a href="#podoplea" id="toc-podoplea" class="nav-link" data-scroll-target="#podoplea"> <span class="header-section-number">4.1.2</span> Podoplea</a></li>
-<li><a href="#brachiopoda" id="toc-brachiopoda" class="nav-link" data-scroll-target="#brachiopoda"> <span class="header-section-number">4.1.3</span> Brachiopoda</a></li>
+<li><a href="#branchiopoda" id="toc-branchiopoda" class="nav-link" data-scroll-target="#branchiopoda"> <span class="header-section-number">4.1.3</span> Branchiopoda</a></li>
 <li><a href="#malacostraca" id="toc-malacostraca" class="nav-link" data-scroll-target="#malacostraca"> <span class="header-section-number">4.1.4</span> Malacostraca</a></li>
+</ul></li>
+<li><a href="#plankton_dark" id="toc-plankton_dark" class="nav-link" data-scroll-target="#plankton_dark"> <span class="header-section-number">4.2</span> Plankton_dark</a>
+<ul class="collapse">
+<li><a href="#mollusca" id="toc-mollusca" class="nav-link" data-scroll-target="#mollusca"> <span class="header-section-number">4.2.1</span> Mollusca</a></li>
+<li><a href="#annelida" id="toc-annelida" class="nav-link" data-scroll-target="#annelida"> <span class="header-section-number">4.2.2</span> Annelida</a></li>
+<li><a href="#actinopterygii-fish-larvae" id="toc-actinopterygii-fish-larvae" class="nav-link" data-scroll-target="#actinopterygii-fish-larvae"> <span class="header-section-number">4.2.3</span> Actinopterygii (fish larvae)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -248,7 +254,8 @@
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(training_dir, <span class="st">"Plankton_crustacea"</span>), </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"file"</span>, <span class="at">glob =</span> <span class="st">"*.png"</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Within the plankton_crustacea group, it is possible to differentiate between gymnoplea, podoplea, Brachiopoda, malacostrace and ostracoda.</p>
+<p>The group plankton_crustacea includes the crustaceans. Typical organisms in this group are copepods, krill, crabs, shrimps, gammarids</p>
+<p>Within the plankton_crustacea group, it is possible to differentiate between gymnoplea, podoplea, branchiopoda and malacostraca.</p>
 <section id="gymnoplea" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="gymnoplea"><span class="header-section-number">4.1.1</span> Gymnoplea</h3>
 <p>Gymnoplea are copepods, which are a well-studied class of crustaceans. These copepods have antennules longer than the cephalosome and the urosome smaller than the prosoma. The calanoida below shows these morphological features (<a href="#fig-gymnoplea">Figure&nbsp;<span>4.1</span></a>).</p>
@@ -274,7 +281,7 @@
 </section>
 <section id="podoplea" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="podoplea"><span class="header-section-number">4.1.2</span> Podoplea</h3>
-<p>Podoplea is composed by the order of cyclopoida and the order of Harpacticoida. These organisms have a great morphological diversity. The antennules are not longer than the prosome and urosome. The urosome is as long as the prosome or not clearly distinguished from the prosome</p>
+<p>Podoplea is composed by the order of cyclopoida and the order of Harpacticoida. These organisms have a great morphological diversity. The antennules are not longer than the prosome and urosome. The urosome is as long as the prosome or not clearly distinguished from the prosome. A copepod that does not look like a gymnoplea belongs to the podoplea.</p>
 <div class="cell">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Podoplea"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -288,15 +295,16 @@
 </div>
 <p>More details on this suborder of copepods can be found in the <a href="01plankton_crustacea.html#sec-podoplea">Section&nbsp;<span>5.1.2</span></a>.</p>
 </section>
-<section id="brachiopoda" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="brachiopoda"><span class="header-section-number">4.1.3</span> Brachiopoda</h3>
+<section id="branchiopoda" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="branchiopoda"><span class="header-section-number">4.1.3</span> Branchiopoda</h3>
+<p>Among the branchiopoda are the Evadne (<a href="01plankton_crustacea.html#sec-evadne">Section&nbsp;<span>5.2.1.1.1</span></a>) and podon (<a href="01plankton_crustacea.html#sec-podon">Section&nbsp;<span>5.2.1.1.2</span></a>). These small crustaceans have a very clear shells on the vignettes</p>
 <div class="cell">
 <div class="sourceCode" id="cb4"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Branchiopoda"</span>, <span class="at">nx =</span> <span class="dv">4</span>, <span class="at">ny =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-vig-brachiopoda" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-vig-branchiopoda" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="n2_files/figure-html/fig-vig-brachiopoda-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.4: Vignettes of Brachiopoda</figcaption><p></p>
+<p><img src="n2_files/figure-html/fig-vig-branchiopoda-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.4: Vignettes of Branchiopoda</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -304,6 +312,7 @@
 </section>
 <section id="malacostraca" class="level3" data-number="4.1.4">
 <h3 data-number="4.1.4" class="anchored" data-anchor-id="malacostraca"><span class="header-section-number">4.1.4</span> Malacostraca</h3>
+<p>Among the malacostraca are the decapods (crabs, lobsters, shrimps,…), the euphausiids (krill), the amphipods (gammarids), the isopods and the stomatopods (the mantis shrimps). This group of crustaceans corresponds to the main idea that novices have of crustaceans (<a href="#fig-vig-malacostraca">Figure&nbsp;<span>4.5</span></a>).</p>
 <div class="cell">
 <div class="sourceCode" id="cb5"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Malacostraca"</span>, <span class="at">nx =</span> <span class="dv">5</span>, <span class="at">ny =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -311,6 +320,64 @@
 <figure class="figure">
 <p><img src="n2_files/figure-html/fig-vig-malacostraca-1.png" class="img-fluid figure-img" width="672"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.5: Vignettes of malacostraca</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>More details on class of Malacostraca can be found in the <a href="01plankton_crustacea.html#sec-malacostraca">Section&nbsp;<span>5.2.2</span></a>.</p>
+</section>
+</section>
+<section id="plankton_dark" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="plankton_dark"><span class="header-section-number">4.2</span> Plankton_dark</h2>
+<p>The plankton_dark group includes darkened organisms in the vignettes. This group consists of molluscs (bivalves and gastropods), annelids and actinopterygians (fish larvae).</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>vigns <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  here<span class="sc">::</span><span class="fu">here</span>(training_dir, <span class="st">"Plankton_dark"</span>), </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"file"</span>, <span class="at">glob =</span> <span class="st">"*.png"</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="mollusca" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="mollusca"><span class="header-section-number">4.2.1</span> Mollusca</h3>
+<p>This group includes the bivalvia and gastropoda. All the organisms studied have shells ( <a href="#fig-vig-mollusca">Figure&nbsp;<span>4.6</span></a> ).</p>
+<p>Cavoliniidae and creseis are easily recognisable individuals among molluscs</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Mollusca"</span>, <span class="at">nx =</span> <span class="dv">4</span>, <span class="at">ny =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-mollusca" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-mollusca-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.6: Vignettes of Mollusca</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>More details on this phylum of mollusca can be found in the <a href="02plankton_dark.html#sec-mollusca">Section&nbsp;<span>6.1</span></a>.</p>
+</section>
+<section id="annelida" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="annelida"><span class="header-section-number">4.2.2</span> Annelida</h3>
+<p>This group includes worms. Annelida are vermiform and metamerised body in several segments along a longitudinal axis ( <a href="#fig-vig-annelida">Figure&nbsp;<span>4.7</span></a> ). Polychaetes are mainly found in the marine environment</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Annelida"</span>, <span class="at">nx =</span> <span class="dv">3</span>, <span class="at">ny =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-annelida" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-annelida-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.7: Vignettes of Annelida</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="actinopterygii-fish-larvae" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="actinopterygii-fish-larvae"><span class="header-section-number">4.2.3</span> Actinopterygii (fish larvae)</h3>
+<p>This group includes fish larvae. These vertebrates are easily identifiable. This group includes fish larvae. These vertebrates are easily identifiable. The most detailed level of the proposed classification allows differentiation between the different developmental stages of the organisms.</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_vignettes</span>(vigns, <span class="at">group =</span> <span class="st">"Actinopterygii"</span>, <span class="at">nx =</span> <span class="dv">4</span>, <span class="at">ny =</span> <span class="dv">5</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-vig-actinopterygii" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="n2_files/figure-html/fig-vig-actinopterygii-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 4.8: Vignettes of Actinopterygii</figcaption><p></p>
 </figure>
 </div>
 </div>

@@ -7,7 +7,7 @@ vigns <- fs::dir_ls(
   type = "file", glob = "*.png", recurse = TRUE)
 ```
 
-## Mollusca
+## Mollusca {#sec-mollusca}
 
 ### Bivalvia
 
