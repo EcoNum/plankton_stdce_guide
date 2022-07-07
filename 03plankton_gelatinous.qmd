@@ -13,7 +13,7 @@ Tunicates are a subphylum of the Chordates. Their name comes from the tunic prod
 
 ### Thaliacea
 
-#### Salpida
+#### Salpida {#sec-salpida}
 
 ##### salpidae
 
@@ -165,25 +165,25 @@ Images of Appendicularia tails fromZooScanNet [@elineau2018].
 
 ## Chaetognatha
 
-Les Chaetognatha sont des prédateurs pélagiques bien étudiée. Ils sont les principaux prédateurs des copépodes. La @fig-chaetognatha montre les 3 parties caractéristiques de ces organismes : tête, tronc, queue [@pierrotsbults2017] .
+Chaetognatha are well studied pelagic predators. They are the main predators of copepods. @fig-chaetognatha shows the 3 characteristic parts of these organisms: head, trunk, tail [@pierrotsbults2017].
 
-![Vignette d'un Chaetognatha et ses caractéristiques : tête (A), tronc (B), queue (C) et les crochets (D) [@quivythomas2018].](images/03plankton_gelatinous/chaetognatha.png){#fig-chaetognatha}
+![Vignette of a Chaetognatha and its characteristics: head (A), trunk (B), tail (C) and hooks (D)[@quivythomas2018].](images/03plankton_gelatinous/chaetognatha.png){#fig-chaetognatha}
 
-Les nageoires sont utilisées afin de déterminer les espèces des chaetognathes [@pierrotbults2020]. L'analyse d'image qui permet d'obtenir les vignettes ne permet pas de conserver une précision suffisante des nageoires [@dugauquier2019].
+Fins are used to determine the species of chaetognaths [@pierrotbults2020]. The image analysis used to obtain the thumbnails does not allow sufficient accuracy of the fins to be maintained [@dugauquier2019].
 
 ### Sagittoidea
 
-On discrimine les Phragmophora, des Aphragmophora de par la présence d'un musculature transversale et des structure glandulaires sur la surface du corps abondante. @dugauquier2019 a approfondi la classification en Krohnittidae, Sagittidae et Eukrohniidae (voir [@dugauquier2019a] ). Cette discrimination est complexe sur base des vignettes.
+Phragmophora are distinguished from Aphragmophora by the presence of transverse musculature and abundant glandular structures on the body surface. @dugauquier2019 further classified into Krohnittidae, Sagittidae and Eukrohniidae (see [@dugauquier2019a] ). This discrimination is complex on the basis of vignettes.
 
-La @fig-vig-sagittoidea présente plusieurs vignettes de Sagittoidea.
+@fig-vig-sagittoidea shows several vignettes of Sagittoidea.
 
 ```{r}
 #| label: "fig-vig-sagittoidea"
-#| fig-cap: "Vignettes de Chaetognatha"
+#| fig-cap: "Vignettes of Chaetognatha"
 plot_vignettes(vigns, group = "Sagittoidae")
 ```
 
-Ce groupe est similaire au groupe `chaetognatha` dans le ZooScanNet ( @fig-zsn-chaetognatha ).
+This group is similar to `chaetognatha` in ZooScanNet ( @fig-zsn-chaetognatha ).
 
 ::: {#fig-zsn-chaetognatha layout-ncol="2"}
 ![](images/zooscannet/chaetognatha/992629.jpg){width="250"}
@@ -194,18 +194,18 @@ Ce groupe est similaire au groupe `chaetognatha` dans le ZooScanNet ( @fig-zsn-c
 
 ![](images/zooscannet/chaetognatha/13626301.jpg){width="100"}
 
-Images de Chaetognatha du ZooScanNet [@elineau2018].
+Images of Chaetognatha [@elineau2018].
 :::
 
 ### Chaetognatha_head {#sec-chaetognatha-head}
 
 ::: callout-important
-## Nouveau groupe
+## New group
 
-Dans les précédentes études (et set d'apprentissages associées), ce groupe n'a pas été discriminé.
+In previous studies (and associated training sets), this group was not studied.
 :::
 
-Lors de l'échantillonnage, ces organismes peuvent être divisé en fragments. La tête est séparée du tronc et la queue ( @fig-zsn-chaeto-head ). Ce groupe reprend les têtes des organismes nommé `head` dans le ZooScanNet [@elineau2018].
+During sampling, these organisms can be divided into fragments. The head is separated from the trunk and the tail ( @fig-zsn-chaeto-head ). This group includes the heads of the organisms named \`head\` in the ZooScanNet [@elineau2018].
 
 ::: {#fig-zsn-chaeto-head layout-ncol="2"}
 ![](images/zooscannet/head/44672728.jpg){width="200"}
@@ -216,18 +216,20 @@ Lors de l'échantillonnage, ces organismes peuvent être divisé en fragments. L
 
 ![](images/zooscannet/head/44708292.jpg){width="200"}
 
-Images de tête de Chaetognatha du ZooScanNet [@elineau2018].
+Chaetognatha head images from ZooScanNet [@elineau2018].
 :::
 
 ### Chaetognatha_tail {#sec-chaetognatha-tail}
 
 ::: callout-important
-## Nouveau groupe
+## New group
 
-Dans les précédentes études (et set d'apprentissages associées), ce groupe n'a pas été discriminé.
+In previous studies (and associated training sets), this group was not studied.
 :::
 
-Lors de l'échantillonnage, ces organismes peuvent être divisé en fragments. La tête est séparée du tronc et la queue ( @fig-zsn-chaeto-tail ). Ce groupe reprend les queues des organismes nommé `tail__chaetognatha` dans le ZooScanNet [@elineau2018]
+During sampling, these organisms can be divided into fragments. The head is separated from the trunk and the tail ( @fig-zsn-chaeto-tail)
+
+In ZooScanNet the group that includes chaetognatha tails is called `tail__chaetognatha` [@elineau2018].
 
 ::: {#fig-zsn-chaeto-tail layout-ncol="2"}
 ![](images/zooscannet/tail__chaetognatha/15729641.jpg){width="250"}
@@ -238,57 +240,54 @@ Lors de l'échantillonnage, ces organismes peuvent être divisé en fragments. L
 
 ![](images/zooscannet/tail__chaetognatha/48074575.jpg)
 
-Images de queues de Chaetognatha du ZooScanNet [@elineau2018]
+Images of Chaetognatha tail from ZooScanNet [@elineau2018]
 :::
 
 ## Ctenophora
 
 ::: callout-important
-## Nouveau groupe
+## New group
 
-Dans les précédentes études (et set d'apprentissages associées), ce groupe n'a pas été discriminé.
+In previous studies (and associated training sets), this group was not studied.
 :::
 
-La particularité anatomique de ce groupe est la présence de 8 peignes (bande composé de cils) qui permettent la locomotion de l'organisme. Ces bandes longitudinales sont symétriques tout autour de l'organisme.
-
-Ce groupe est un groupe rare avec un nombre d'image très limitée 39 dans le ZooScanNet [@elineau2018].
+The anatomical particularity of this group is the presence of 8 combs (bands composed of cilia) which allow the locomotion of the organism. These longitudinal bands are symmetrical all around the organism. This group is a rare group with a very limited number of images 39 in the ZooScanNet [@elineau2018].
 
 ## Cnidaria
 
 ### Scyphozoa
 
-Les schyphozoaires sont communément appelé méduses. Ces organismes sont à la fois benthiques et pélagiques [@licandro2017]. Les stades successifs du développement des méduse sont présentés ci-dessous.
+Schyphozoans are commonly known as jellyfish. These organisms are both benthic and pelagic [@licandro2017]. The successive stages of jellyfish development are presented below.
 
-![Cycle de vie de Catostylus mosaicus (Scyphozoa: Rhizostomeae) [@pitt2000].](images/03plankton_gelatinous/scyphozoa_life_cycle.png){fig-align="center" width="348"}
+![Life cycle of Catostylus mosaicus (Scyphozoa: Rhizostomeae) [@pitt2000].](images/03plankton_gelatinous/scyphozoa_life_cycle.png){fig-align="center" width="348"}
 
 #### Scyphozoa_ephyra
 
-Le stade ephyra est aisément reconnaissable de par sa symétrie de 8 ( @fig-vig-ephyra ). Les canaux radiaux et adriaticaux sont plus foncés sur les vignettes. La morphologie des canaux radiaux et adriaticaux peut être employée afin d'affiner la classification. Nous n'irons cependant pas plus loin dans cet ouvrage.
+The ephyra stage is easily recognized by its 8 symmetry ( @fig-vig-ephyra ). The radial and adriatic canals are darker in the vignettes. The morphology of the radial and adriatic canals can be used to refine the classification. However, we will not go any further in this book.
 
 ```{r}
 #| label: "fig-vig-ephyra"
-#| fig-cap: "Vignettes du stade ephyra des Scyphozoa"
+#| fig-cap: "Vignettes of ephyra larva"
 plot_vignettes(vigns, group = "Scyphozoa_ephyra")
-
 ```
 
-Ce groupe est similaire au groupe ephyra dans le ZooScanNet (@fig-zsc-ephyra).
+This group is similar to the `ephyra` group in ZooScanNet (@fig-zsc-ephyra).
 
 ::: {#fig-zsc-ephyra layout-ncol="2"}
 ![](images/zooscannet/ephyra/34834644.jpg){width="162"}
 
 ![](images/zooscannet/ephyra/34826029.jpg){width="158"}
 
-Image du stade ephyra du ZooScanNet [@elineau2018].
+Image of ephyra larva from ZooScanNet [@elineau2018].
 :::
 
 #### Scyphozoa_medusa
 
-Au stade méduse, la symétrie de 8 est moins marqué. Les différents canaux sont toujours plus On observe. Les organismes sont généralement plus grand que ceux du stade ephyra ( @fig-scyph-medusa ).
+In the medusa stage, the symmetry of 8 is less marked. The individual canals are always larger than in the ephyra stage. The organisms are generally larger than those of the ephyra stage (@fig-scyph-medusa).
 
-![Vignette du stade meduse des scyphozoa](training_set/_train/_train_classif8/Plankton_gelatinous/Cnidaria/Scyphozoa/Scyphozoa_medusa/STDCE.2010-06-22.H1+B1_199.png){#fig-scyph-medusa width="285"}
+![Vignette of Scyphozoa](training_set/_train/_train_classif8/Plankton_gelatinous/Cnidaria/Scyphozoa/Scyphozoa_medusa/STDCE.2010-06-22.H1+B1_199.png){#fig-scyph-medusa width="285"}
 
-La @fig-scyph-medusa présente plusieurs vignettes du stade méduse.
+@fig-scyph-medusa shows several vignettes of `Scyphozoa`.
 
 ```{r}
 #| label: "fig-vig-medusa"
@@ -296,7 +295,7 @@ La @fig-scyph-medusa présente plusieurs vignettes du stade méduse.
 plot_vignettes(vigns, group = "Scyphozoa_medusa", nx =2, ny = 2)
 ```
 
-Ce groupe est similaire au groupe `scyphozoa` dans le ZooScanNet ( @fig-zsn-scy-medu ).
+This group is similar to the `scyphozoa` group in ZooScanNet ( @fig-zsn-scy-medu ).
 
 ::: {#fig-zsn-scy-medu layout-ncol="2"}
 ![](images/zooscannet/scyphozoa/14927820.jpg){width="250"}
@@ -307,7 +306,7 @@ Ce groupe est similaire au groupe `scyphozoa` dans le ZooScanNet ( @fig-zsn-scy-
 
 ![](images/zooscannet/scyphozoa/46976909.jpg){width="250"}
 
-Image du stade meduse du ZooScanNet [@elineau2018]
+Image of Scyphozoa from ZooScanNet [@elineau2018]
 :::
 
 ### Hydrozoa
@@ -319,16 +318,16 @@ Image du stade meduse du ZooScanNet [@elineau2018]
 ###### Obelia
 
 ::: callout-important
-## Nouveau groupe
+## New group
 
-Dans les précédentes études (et set d'apprentissages associées), ce groupe n'a pas été discriminé.
+In previous studies (and associated training sets), this group was not studied.
 :::
 
-Au centre, on retrouve la bouche de l'organisme relie par les canaux radiaires aux gonades. Le canal circulaire et les bulbes tentaculaires sont marqués à la base des tentacules ( @fig-obelia ) .
+In the centre, the mouth of the organism is connected by radial canals to the gonads. The circular canal and the tentacular bulbs are marked at the base of the tentacles ( @fig-obelia ) .
 
-![Image de Leptomeduse *Obelia* sp [@hecq2009]](images/03plankton_gelatinous/obelia.png){#fig-obelia width="301"}
+![Image of *Obelia* sp [@hecq2009]](images/03plankton_gelatinous/obelia.png){#fig-obelia width="301"}
 
-Ce groupe doit être similaire au groupe `obelia` dans le ZooScanNet ( @fig-zsn-obelia ).
+This group is similar to the `obelia` group in ZooScanNet ( @fig-zsn-obelia ).
 
 ::: {#fig-zsn-obelia layout-ncol="2"}
 ![](images/zooscannet/obelia/48003966.jpg){width="200"}
@@ -339,7 +338,7 @@ Ce groupe doit être similaire au groupe `obelia` dans le ZooScanNet ( @fig-zsn-
 
 ![](images/zooscannet/obelia/48002929.jpg){width="200"}
 
-Image d'*Obelia* du ZooScanNet [@elineau2018].
+Image of *Obelia* from ZooScanNet [@elineau2018].
 :::
 
 #### Siphonophorae

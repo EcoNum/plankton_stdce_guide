@@ -145,7 +145,7 @@ The shell of *Creseis virgula* is conical with a pronounced curvature at the ape
 plot_vignettes(vigns, group = "Creseis_virgula")
 ```
 
-## Annelida
+## Annelida {#sec-annelida}
 
 The main characteristic of this phylum is the vermiform and metamerised body in several segments along a longitudinal axis.
 
@@ -225,7 +225,7 @@ Images of the larva of Annelida from ZooScanNet [@elineau2018]
 
 ### Actinopterygii
 
-#### Actinopterygii_larva
+#### Actinopterygii_larva {#sec-actinopterygii_larva}
 
 ##### Actinopterygii_alevin
 

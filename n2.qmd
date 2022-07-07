@@ -102,6 +102,8 @@ This group includes worms. Annelida are vermiform and metamerised body in severa
 plot_vignettes(vigns, group = "Annelida", nx = 3, ny = 3)
 ```
 
+More details on this phylum of annelida can be found in the @sec-annelida.
+
 ### Actinopterygii (fish larvae)
 
 This group includes fish larvae. These vertebrates are easily identifiable. This group includes fish larvae. These vertebrates are easily identifiable. The most detailed level of the proposed classification allows differentiation between the different developmental stages of the organisms.
@@ -113,7 +115,11 @@ plot_vignettes(vigns, group = "Actinopterygii", nx = 4, ny = 5
 )
 ```
 
+More details on this class of Actinopterygii can be found in the @sec-actinopterygii_larva.
+
 ## Plankton_gelatinous
+
+The plankton_gelatinous group includes organisms that are clear in the vignettes. These organisms have a gelatinous body like jellyfish for example. These organisms are quite fragile and are broken during collection. This can make identification more complex.
 
 ```{r}
 vigns <- fs::dir_ls(
@@ -123,7 +129,7 @@ vigns <- fs::dir_ls(
 
 ### Thaliacea
 
-@fig-vig-thaliacea
+These organisms are transparent, which is indicated by the very light yellow on the vignettes (@fig-vig-thaliacea). The band of muscle present in the Doliolida (@sec-doliolida) is not present. There is, however, the presence of muscle (@sec-salpida).
 
 ```{r}
 #| label: "fig-vig-thaliacea"
@@ -133,7 +139,7 @@ plot_vignettes(vigns, group = "Thaliacea", nx = 4, ny = 4)
 
 ### Appendicularia
 
-@fig-vig-appendicularia
+The appendicularia are vermiform. There are two distinct parts: the head (darker) and the tail (longer and lighter) (@fig-vig-appendicularia). Despite their vermiform appearance, they are quite different from annelida.
 
 ```{r}
 #| label: "fig-vig-appendicularia"
@@ -143,7 +149,7 @@ plot_vignettes(vigns, group = "Appendicularia", nx = 5, ny = 5)
 
 ### Chaetognatha
 
-@fig-vig-chaetognatha
+Chaetognatha are also wormlike. These predators have the particularity of having hooks on the front of their head (@fig-vig-chaetognatha). After observing a head of these organisms. It is no longer possible to get the wrong group.
 
 ```{r}
 #| label: "fig-vig-chaetognatha"
